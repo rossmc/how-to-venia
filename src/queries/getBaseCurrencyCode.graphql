@@ -1,0 +1,5 @@
+query getBaseCurrencyCode {
+  storeConfig {
+    base_currency_code
+  }
+}

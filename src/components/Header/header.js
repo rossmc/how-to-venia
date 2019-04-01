@@ -12,7 +12,7 @@ import SearchTrigger from '@magento/venia-concept/esm/components/Header/searchTr
 
 const SearchBar = React.lazy(() => import('@magento/venia-concept/esm/components/SearchBar'));
 
-import defaultClasses from '@magento/venia-concept/esm/components/Header/header.css';
+import defaultClasses from 'src/components/Header/header.css';
 import Logo from '../Logo';
 
 class Header extends Component {

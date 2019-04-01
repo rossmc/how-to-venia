@@ -10,15 +10,15 @@ It is also a collection of **[how-to-articles]** which can be followed to give y
 Do your own research before using this in a production environment.  
 It's not clear to me which are the recommended approaches from Magento to use [PWA Studio], and this may not be one. 
 There are other approaches out there, see [fallback-studio].
-I created this repository to share what I've learnt from exploring [PWA Studio]. 
-There are aspects of [PWA Studio] which I may not fully appreciate.
+I created this repository to share what I've learnt from exploring PWA Studio. 
+There are aspects of PWA Studio which I may not fully appreciate.
 
 ## Why?
 As I started to explore [PWA Studio] I kept notes to help me understand how it worked. 
 As a Magento front-end developer there are new skills to master :smile:
 I thought that these notes may be helpful to others who were in a similar position.
 
-Also, it was unclear to me how [PWA Studio] could be quickly bootstrapped to create a PWA Storefront for Magento.
+Also, it was unclear to me how PWA Studio could be quickly bootstrapped to create a PWA Storefront for Magento.
 After following the [Venia storefront setup] documentation I had a project which was part of a [monorepo] that is used to develop and publish NPM packages for [@magento].  
 
 While this works very well to demonstrate, publish and help people to contribute to the work of [PWA Studio], it does not seem like the best place to begin a project from.

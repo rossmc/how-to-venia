@@ -9,6 +9,7 @@ It is also a collection of **[how-to-articles]** which can be followed to give y
 ⚠️ **CAVEAT**     
 Do your own research before using this in a production environment.  
 It's not clear to me which are the recommended approaches from Magento to use PWA studio, and this may not be one. 
+There are other approaches out there, see [fallback-studio].
 I created this repository to share what I've learnt from exploring PWA Studio. 
 There are aspects of PWA Studio which I may not fully appreciate.
 
@@ -22,7 +23,7 @@ After following the [Venia storefront setup] documentation I had a project which
 
 While this works very well to demonstrate, publish and help people to contribute to the work of PWA Studio, it does not seem like the best place to begin a project from.
 
-I wanted a stand-alone PWA Storefront for a Magento 2 backend, not something which was part of a monorepo that managed dependencies with Yarn workspaces.
+I wanted a stand-alone PWA Storefront for a Magento 2 backend, not something which was part of a monorepo that managed dependencies with [Yarn Workspaces].
 So rather than create something from scratch I have copied the base configuration, tooling & setup from the venia-concept package.
 Magento and their community contributors have done an excellent job in providing these. 
 And I believe this gives an excellent starting for a project by providing:
@@ -106,6 +107,7 @@ Magento for creating [PWA Studio].
 [Venia storefront setup]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/setup/
 [monorepo]: https://github.com/magento-research/pwa-studio#about-this-repository
 [@magento]: https://www.npmjs.com/org/magento
+[Yarn Workspaces: https://yarnpkg.com/en/docs/workspaces/
 [fallback-studio]: https://github.com/Jordaneisenburger/fallback-studio
 [./how-to-articles/]: ./how-to-articles/
 [PWA Studio]: https://github.com/magento-research/pwa-studio

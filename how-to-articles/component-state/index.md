@@ -27,7 +27,7 @@ Now test this element on the storefront and see how it automatically updates as 
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/
+- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [controlled form element]: https://reactjs.org/docs/forms.html#controlled-components
 [component state]: https://reactjs.org/docs/faq-state.html

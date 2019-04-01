@@ -15,7 +15,7 @@ Next add the following JSX.
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/
+- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [Roadmap]: https://github.com/magento-research/pwa-studio/wiki/Roadmap
 [@magento/peregrine]: https://www.npmjs.com/package/@magento/peregrine

@@ -63,6 +63,6 @@ Browse to the /foo.html URL in the application.
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/
+- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [React Apollo]: https://github.com/apollographql/react-apollo

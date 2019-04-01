@@ -62,7 +62,7 @@ Inspect the `h1.title` element in the browser inspector to see how the CSS class
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/
+- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [CSS Modules]: https://magento-research.github.io/pwa-studio/technologies/basic-concepts/css-modules/
 [HOC]: https://reactjs.org/docs/higher-order-components.html

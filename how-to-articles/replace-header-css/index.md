@@ -12,6 +12,6 @@ Now edit the css in header.css as you wish.
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/
+- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [replaced the Footer component earlier]: ../add-link-to-footer/index.md

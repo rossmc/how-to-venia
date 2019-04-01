@@ -14,7 +14,7 @@ There are aspects of PWA Studio which I may not fully appreciate.
 
 ## Why?
 As I started to explore PWA Studio I kept notes to help me understand how it worked. 
-As a Magento front-end Developer there are new skills to master :smile:
+As a Magento front-end developer there are new skills to master :smile:
 I thought that these notes may be helpful to others who were in a similar position.
 
 Also, it was unclear to me how PWA Studio could be quickly bootstrapped to create a PWA Storefront for Magento.

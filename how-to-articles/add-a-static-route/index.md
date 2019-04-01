@@ -58,7 +58,8 @@ import Foo from 'src/components/Foo';
 Browse to the _/foo.html_ URL in the application. 
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
+- [> see foo-demo branch for completed code](https://github.com/
 
 [JSX]: https://reactjs.org/docs/introducing-jsx.html
 [Link]: https://knowbody.github.io/react-router-docs/api/Link.html

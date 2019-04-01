@@ -35,7 +35,7 @@ Since Magento's GraphQL is still in development, page types are limited to the t
 - [Magento PWA Studio: Routing and Root Components]
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
 
 [packages/venia-concept/src/index.js]: https://github.com/magento-research/pwa-studio/blob/v2.1.0/packages/venia-concept/src/index.js
 [`<App>`]: https://github.com/magento-research/pwa-studio/blob/v2.1.0/packages/venia-concept/src/index.js#L41

@@ -569,7 +569,7 @@ As far as I could find, you cannot remove the following directory and files with
 - src/components/clickable.css (similar to above)
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
 
 [Step 2]: ./index.md#2-change-the-name-of-your-project
 [Step 3]: ./index.md#3-pdate-enviroment-variables

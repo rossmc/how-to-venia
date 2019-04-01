@@ -14,7 +14,8 @@ Next add the following JSX.
 **Note:** In PWA Studio's 2019 [Roadmap] they plan to move catalog components such as the above, to their [@magento/peregrine] library.
 
 ---
-[> go to index](../index.md)
+- [> see other topics](../../README.md#Topics)
+- [> see foo-demo branch for completed code](https://github.com/
 
 [Roadmap]: https://github.com/magento-research/pwa-studio/wiki/Roadmap
 [@magento/peregrine]: https://www.npmjs.com/package/@magento/peregrine

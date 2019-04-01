@@ -21,7 +21,7 @@ _src/reducers/foo.js_
 ```javascript
 import { handleActions } from 'redux-actions';
  
-import actions from 'src/actions/app'; // we'll use these actions for now, and create our own one later
+import actions from '@magento/venia-concept/esm/actions/app'; // we'll use these actions for now, and create our own one later
  
 export const name = 'foo';
  
@@ -104,6 +104,8 @@ And replace the export statement back to what it was previously:
 Browse to /foo.html to see the _"lorem ipsum"_ is still coming from the redux store.
 
 ### Update The Redux Store
+
+#### Created an Action
 To update the Redux store we first need to add a [redux action].
 
 Add the following files...
@@ -139,6 +141,14 @@ export * from './asyncActions';
 
 - [createActions] to create multiple actions at once.
 - [async actions] which are useful when API responses update the redux store.
+
+#### Update the Reducer with the New Action
+Now that we have our redux action created add it to our reducer go to _how-to-venia/_src/reducers/foo.js_ and change the `import actions` statement to:     
+`import actions from 'src/actions/foo';`
+
+And in the `reducerMap` change `toggleDrawer` to `actions.updateTest`.
+
+#### Create a component to update the Redux Store
 
 Next we'll create a new child component which will use the action above to update the redux store.
 
@@ -188,7 +198,8 @@ Now test it by typing into the new input box while checking Redux dev tools to s
 
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
+- [> see foo-demo branch for completed code](https://github.com/
 
 [Redux]: https://redux.js.org/
 [Redux DevTools]: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd

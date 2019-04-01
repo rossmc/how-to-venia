@@ -33,7 +33,7 @@ yarn start
 ```
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
 
 [stack Prerequisites]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/setup/#prerequisites
 [Detailed Project Setup]: ./detailed-project-setup.md

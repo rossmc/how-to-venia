@@ -3,4 +3,4 @@ TODO: Research and describe using a non Magento REST API so that the PWA Storefr
 
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)

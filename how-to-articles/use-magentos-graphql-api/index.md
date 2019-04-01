@@ -62,6 +62,7 @@ Replace `<div>loading...</div>` with `<loadingIndicator />`.
 Browse to the /foo.html URL in the application.
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
+- [> see foo-demo branch for completed code](https://github.com/
 
 [React Apollo]: https://github.com/apollographql/react-apollo

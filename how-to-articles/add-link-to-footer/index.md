@@ -20,4 +20,5 @@ Finally add the below JSX to render the Link for the _foo.html_ static route:
 
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
+- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)

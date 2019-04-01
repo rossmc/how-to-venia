@@ -41,7 +41,7 @@ You may decide you want to keep some components rather than import them, as you 
 
 Lets begin by simply adding the package as a dependency:
 ```bash
-yarn add -D @magento/venia-concept
+yarn add -D @magento/venia-concept@2.1.0
 ```
 
 #### Update webpack.config.js

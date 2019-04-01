@@ -17,15 +17,15 @@ As I started to explore PWA Studio I kept notes to help me understand how it wor
 As a Magento front-end Developer there are new skills to master :smile:
 I thought that these notes may be helpful to others who were in a similar position.
 
-Also, it was unclear to me how PWA Studio could be quickly bootstraped to create a PWA Storefront for Magento.
+Also, it was unclear to me how PWA Studio could be quickly bootstrapped to create a PWA Storefront for Magento.
 After following the [Venia storefront setup] documentation I had a project which was part of a [monorepo] that is used to develop and publish NPM packages for [@magento].  
 
 While this works very well to demonstrate, publish and help people to contribute to the work of PWA Studio, it does not seem like the best place to begin a project from.
 
-I wanted a standalone PWA Storefront for a Magento 2 backend, not something which was part of a monorepo that managed dependencies with Yarn workspaces.
+I wanted a stand-alone PWA Storefront for a Magento 2 backend, not something which was part of a monorepo that managed dependencies with Yarn workspaces.
 So rather than create something from scratch I have copied the base configuration, tooling & setup from the venia-concept package.
-Magento and their community contributer have done an excelent job in providing thease. 
-And I believe this gives an excelent starting for a project by providing:
+Magento and their community contributors have done an excellent job in providing these. 
+And I believe this gives an excellent starting for a project by providing:
 - [PWADevServer](https://magento-research.github.io/pwa-studio/pwa-buildpack/reference/pwa-dev-server/)
 - [Routing](https://magento-research.github.io/pwa-studio/peregrine/routing/)
 - [Redux setup](https://magento-research.github.io/pwa-studio/technologies/tools-libraries/)

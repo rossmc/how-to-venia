@@ -107,7 +107,7 @@ Magento for creating [PWA Studio].
 [Venia storefront setup]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/setup/
 [monorepo]: https://github.com/magento-research/pwa-studio#about-this-repository
 [@magento]: https://www.npmjs.com/org/magento
-[Yarn Workspaces: https://yarnpkg.com/en/docs/workspaces/
+[Yarn Workspaces]: https://yarnpkg.com/en/docs/workspaces/
 [fallback-studio]: https://github.com/Jordaneisenburger/fallback-studio
 [./how-to-articles/]: ./how-to-articles/
 [PWA Studio]: https://github.com/magento-research/pwa-studio

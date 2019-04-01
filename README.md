@@ -1,7 +1,8 @@
 # How to Venia
 ## What?
 This is a Magento 2.3.1 PWA Storefront which uses the base configuration, tools & setup from [PWA Studio's venia-concept] v2.1.0 package.  
-It does not include all the components from the venia-concept package, preferring to consume components from [@magento/venia-concept] and [@magento/peregrine] which are added as project dependencies.
+
+It does not include all the components from the venia-concept package, preferring to import components from [@magento/venia-concept] and [@magento/peregrine] which are added as project dependencies.
 
 It is also a collection of **[how-to-articles]** which can be followed to give you an understanding of how the venia-concept package was built and to demonstrate one method in which it could be used to create your own PWA Storefront for Magento.
 

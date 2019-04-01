@@ -1,6 +1,6 @@
 # Add a Static Route
 ### Intro
-Before adding a static route review [Routing with PWA Studio](./add-a-static-route/routing-with-pwa-studio.md)
+Before adding a static route review [Routing with PWA Studio](./routing-with-pwa-studio.md)
 
 ---
 

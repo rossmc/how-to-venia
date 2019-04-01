@@ -9,7 +9,7 @@ Note the use of the `<Adapter />` [HOC] wrapped around the the `<App />` compone
 
 ![magento router screenshot](./magento-router-screenshot.png)
 
-The [APP component] is responsible for rendering the components for the [application shell.
+The [APP component] is responsible for rendering the components for the [application shell].
 The [`<Main>`] component here is using the **renderRoutes()** function from [renderRoutes.js].
 
 In [renderRoutes.js] we see how pwa-studio is using [react-router] for rendering static routes like _/search.html_ and _/create-account_. It's using the `<Page>` component from PWA Studio's Peregrine library to render Magento's Category & Product routes.
@@ -26,7 +26,7 @@ In this directory you will find it's components each have an _index.js_ entry po
 >
 > ref: https://inchoo.net/magento-2/magento-pwa-studio-routing-root-components/
 
-Since Magento's GraphQL is still in development, page types are limited to the three types , CMS, Category and Product). You can find them defined in:
+Since Magento's GraphQL is still in development, page types are limited to the three types , CMS, Category and Product. You can find them defined in:
 - [CatalogUrlRewriteGraphQl schema]
 - [CmsUrlRewriteGraphQl schema]
 

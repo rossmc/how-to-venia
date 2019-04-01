@@ -1,7 +1,7 @@
 # Detailed Project Setup
 Rather than clone this repository you can set up your own by following the instructions below to pull the [@magento/venia-concept] package from the pwa-studio monorepo to create your own PWA Storefront based upon.
 
-After you have a copy of the venia store front, you will first make the [@magento/venia-concept] a dependency of your project and then begin to replace components in your project with ones which you import from the @magento/venia-concept package.
+After you have a copy of the venia storefront, you can make the [@magento/venia-concept] a dependency of your project and then begin to replace components in your project with ones which you import from the @magento/venia-concept package.
 
 ### 1. Clone & Copy
 Use the following commands to clone the pwa-studio mono repo and copy it's venia concept to use as your projects base setup.
@@ -31,12 +31,13 @@ yarn add -D babel-plugin-module-resolver babel-eslint
 cp .env.dist .env
 ```
 
-You can stop here and continue to [Step 2] of the project setup with a like for like copy of the Venia Concept storefront.  Alternativly you can continue to use @magento/venia-concept as a dependency of your project and have less code to maintain in your project.
+You can stop here and continue to [Step 2] of the project setup with a like for like copy of the Venia Concept storefront.  Alternativly you can continue to and use [@magento/venia-concept] as a dependency in your project.
 
 ### 2. Setup @magento/venia-concept as a dependency
-The idea is that your PWA Storefront will use the tools from PWA Studio rather than just copy them.  Therefore we need to also add the [@magento/venia-concept] package as a dependency, and consume the components it provides.
+The idea is that your PWA Storefront will use the tools from PWA Studio rather than just copy them.  Therefore we need to also add the [@magento/venia-concept] package as a dependency, and import the components it provides.
 
-After we have @magento/venia-concept set up as a dependency we'll begin replacing components in the project with ones which we import from the @magento/venia-concept package, bit by bit, testing as we go.  You may decide you want to keep some components rather than import them, as you are planning on customising them yourself, the `<Footer />` component for example.
+After we have @magento/venia-concept set up as a dependency we'll begin replacing components in the project with ones which we import from it, bit by bit, testing as we go.
+You may decide you want to keep some components rather than import them, as you are planning on customising them yourself, the `<Footer />` component for example.
 
 Lets begin by simply adding the package as a dependency:
 ```bash
@@ -44,7 +45,7 @@ yarn add -D @magento/venia-concept
 ```
 
 #### Update webpack.config.js
-Next you need to make the following change to _webpack.config.js_ from that your webpack build correctly parses .graphql files from the _@magento/venia-concept_ pacakge:
+Next you need to make the following change to _webpack.config.js_ so that your build correctly parses `.graphql` files from the _@magento/venia-concept_ pacakge:
 ```diff
 webpack.config.js
 @@ -67,7 +67,7 @@ module.exports = async function(env) {
@@ -218,7 +219,7 @@ import Header from 'src/components/Header';
 
  Test the app by running `yarn watch` before continuing.
 
-### Update the clsisify componet
+### Update the classify componet
 Update your project's to use the classify component from [@magento/venia-concept].
 ```diff
 diff --git a/src/components/Header/header.js b/src/components/Header/header.js

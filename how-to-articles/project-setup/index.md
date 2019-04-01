@@ -1,5 +1,5 @@
 # Project Setup
-The project is based on PWA Studio v2.1.0.  Please ensure you have the correct [stack Prerequisites] installed locally before continuing.
+This project is based on PWA Studio v2.1.0.  Please ensure you have the correct [stack prerequisites] installed locally before continuing.
 
 ### 1. Clone this repository
 Simply start by cloning this repository or read the [Detailed Project Setup] doc to see how this repository was created.
@@ -15,10 +15,10 @@ cp .env.dist .env
 ```
 
 ### 2. Change the name of your Project
-Simply change the `name` of your project in [package.json] so that your dev server is named correctly. 
+Change the `name` of your project in [package.json] so that your dev server is named correctly. 
 
 ### 3. Update Enviroment Variables
-You can continue to use the publick Magento 2.3.1 backend & braintree credentials set in [.env] or you can update them to use your own by changing the properties for `MAGENTO_BACKEND_URL` and `BRAINTREE_TOKEN`.
+You can continue to use the public Magento 2.3.1 backend & braintree credentials set in [.env] or you can update them to use your own by changing the properties for `MAGENTO_BACKEND_URL` and `BRAINTREE_TOKEN`.
 
 See the PWA Studio docs on [Specify the Magento backend server] for more details.
 
@@ -35,7 +35,7 @@ yarn start
 ---
 - [> see other topics](../../README.md#Topics)
 
-[stack Prerequisites]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/setup/#prerequisites
+[stack prerequisites]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/setup/#prerequisites
 [Detailed Project Setup]: ./detailed-project-setup.md
 [package.json]: ../../package.json#L2
 [.env]: ../../.env

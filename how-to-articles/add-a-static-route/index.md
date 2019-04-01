@@ -59,7 +59,7 @@ Browse to the _/foo.html_ URL in the application.
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/
+- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [JSX]: https://reactjs.org/docs/introducing-jsx.html
 [Link]: https://knowbody.github.io/react-router-docs/api/Link.html

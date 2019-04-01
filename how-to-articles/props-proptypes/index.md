@@ -45,7 +45,7 @@ i.e. `<Greeting name={2} />`
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/
+- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [previously]: ../add-a-static-route/index.md
 [REACT docs]: https://reactjs.org/docs/typechecking-with-proptypes.html

@@ -7,7 +7,7 @@ It does not include all the components from the venia-concept package, preferrin
 It is also a collection of **[how-to-articles]** which can be followed to give you a basic understanding of how the venia-concept package was built and to demonstrate one method in which it could be used to create your own PWA Storefront for Magento.
 
 ⚠️ **CAVEAT**     
-Do your own research before using this in a production enviroment.  
+Do your own research before using this in a production environment.  
 It's not clear to me which are the recommended approaches from Magento to use PWA studio, and this may not be one. 
 I created this repository to share what I've learnt from exploring PWA Studio. 
 There are aspects of PWA Studio which I may not fully appreciate.
@@ -82,13 +82,13 @@ cd how-to-venia
 # install dependencies
 yarn install
 
-# set default enviroment variables
+# set default environment variables
 cp .env.dist .env
 
-# start the app with development enviroment which includes hot-reloading
+# start the app with development environment which includes hot-reloading
 yarn watch
 
-# OR run the staging enviroment which will more closely reflect production
+# OR run the staging environment which will more closely reflect production
 yarn build:prod
 yarn start
 ```

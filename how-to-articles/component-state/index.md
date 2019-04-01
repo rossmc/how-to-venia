@@ -26,7 +26,8 @@ Then add the following JSX:
 Now test this element on the storefront and see how it automatically updates as you type into the input element.
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
+- [> see foo-demo branch for completed code](https://github.com/
 
 [controlled form element]: https://reactjs.org/docs/forms.html#controlled-components
 [component state]: https://reactjs.org/docs/faq-state.html

@@ -44,7 +44,8 @@ Try passing in an invalid prop type to the Greeting component. And check your br
 i.e. `<Greeting name={2} />`
 
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
+- [> see foo-demo branch for completed code](https://github.com/
 
 [previously]: ../add-a-static-route/index.md
 [REACT docs]: https://reactjs.org/docs/typechecking-with-proptypes.html

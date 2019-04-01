@@ -24,8 +24,10 @@ https://release-dev-231-npzdaky-zddsyhrdimyra.us-4.magentosite.cloud/graphql
 1. Check to see what GraphQL queries the [venia storefront demo] is using by looking at the chrome network tab.
 ![chrome network tab](./graphql-network-screenshot.png)
 1. Try using one of these queries in GraphiQL.
+
+
 ---
-[> see other topics](../../README.md#Topics)
+- [> see other topics](../../README.md#Topics)
 
 [article on medium]: https://medium.com/the-graphqlhub/graphiql-graphql-s-killer-app-9896242b2125
 [ChromeiQL]: https://chrome.google.com/webstore/detail/chromeiql/fkkiamalmpiidkljmicmjfbieiclmeij

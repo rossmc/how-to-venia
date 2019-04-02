@@ -55,6 +55,20 @@ webpack.config.js
 -                    exclude: /node_modules/,
 +                    exclude: /node_modules\/(?!(@magento\/venia-concept)\/).*/,
                      use: [
+@@ -117,7 +118,11 @@ module.exports = async function(env) {
+         resolve: await MagentoResolver.configure({
+             paths: {
+                 root: __dirname
+-            }
++            },
++            alias: {
++                // Inject our own dependencies so we can load Venia components independently
++                "@magento/venia-drivers": "./src/drivers",
++            },
+         }),
+         plugins: [
+             await makeMagentoRootComponentsPlugin({
+ 
 ```
 
 #### Update RootComponents

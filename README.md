@@ -1,4 +1,4 @@
-# How to Venia
+# How to Venia (**work in progress**)
 ## What?
 This is a Magento 2.3.1 PWA Storefront which uses the base configuration, tools & setup from [PWA Studio's venia-concept] v2.1.0 package.  
 
@@ -11,7 +11,8 @@ Do your own research before using this in a production environment.
 It's not clear to me which are the recommended approaches from Magento to use [PWA Studio], and this may not be one. 
 There are other approaches out there, see [fallback-studio].
 I created this repository to share what I've learnt from exploring PWA Studio. 
-There are aspects of PWA Studio which I may not fully appreciate.
+There are aspects of PWA Studio which I may not fully appreciate.   
+See [TODO]
 
 ## Why?
 As I started to explore [PWA Studio] I kept notes to help me understand how it worked. 
@@ -99,11 +100,15 @@ Magento for creating [PWA Studio].
 
 ## TODO
 - The npm/yarn build:esm script is not working, look into fixing this.
+- Test against a local Magento v2.3.1 backend.     
+  As there could be unforeseen issues when @magento/venia-concept used the same `MAGENTO_BACKEND_URL`.
+- Experiment with VeniaAdapter to make venia components work more reliably.
 
 [PWA Studio's venia-concept]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/
 [@magento/venia-concept]: https://www.npmjs.com/package/@magento/venia-concept
 [@magento/peregrine]: https://www.npmjs.com/package/@magento/peregrine
 [how-to-articles]: #How-to-Articles
+[TODO]: #TODO
 [Venia storefront setup]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/setup/
 [monorepo]: https://github.com/magento-research/pwa-studio#about-this-repository
 [@magento]: https://www.npmjs.com/org/magento

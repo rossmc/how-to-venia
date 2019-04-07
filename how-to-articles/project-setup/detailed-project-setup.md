@@ -10,7 +10,7 @@ git clone https://github.com/magento-research/pwa-studio.git pwa-studio-temp
 cd pwa-studio-temp
 
 # Chekout the latest version
-git checkout v2.1.0
+git checkout tags/v2.1.0 -b v2.1.0
 
 # make a copy of the venia-concept package
 cp -r packages/venia-concept ../how-to-venia

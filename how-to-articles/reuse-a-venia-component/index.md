@@ -2,7 +2,7 @@
 Here we'll quickly demonstrated how PWA Studio components can be easily reused.
 
 Import the CategoryList to the Foo component:    
-`import CategoryList from '@magento/venia-concept/esm/components/CategoryList';`
+`import CategoryList from 'src/components/CategoryList';`
 
 Next add the following JSX.
 

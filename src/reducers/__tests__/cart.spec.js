@@ -1,6 +1,6 @@
 import reducer, { initialState } from 'src/reducers/cart';
-import actions from '@magento/venia-concept/esm/actions/cart';
-import checkoutActions from '@magento/venia-concept/esm/actions/checkout';
+import actions from 'src/actions/cart';
+import checkoutActions from 'src/actions/checkout';
 
 const state = { ...initialState };
 

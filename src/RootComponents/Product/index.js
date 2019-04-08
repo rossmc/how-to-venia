@@ -4,4 +4,4 @@
  * pageTypes = PRODUCT
  */
 
-export { default } from '@magento/venia-concept/esm/RootComponents/Product/Product';
+export { default } from './Product';

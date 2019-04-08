@@ -1,6 +1,6 @@
 export { Query } from 'react-apollo';
 export { Link, Redirect, Route } from 'react-router-dom';
-export { default as resourceUrl } from '@magento/venia-concept/esm/util/makeUrl';
+export { default as resourceUrl } from '../util/makeUrl';
 export { default as Adapter } from './adapter';
 export { connect } from 'react-redux';
 

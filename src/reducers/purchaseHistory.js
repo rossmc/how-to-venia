@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions';
 
-import actions from '@magento/venia-concept/esm/actions/purchaseHistory/actions';
+import actions from '../actions/purchaseHistory/actions';
 
 const initialState = {
     items: [],

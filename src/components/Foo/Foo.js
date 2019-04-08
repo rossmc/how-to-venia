@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Greeting from './greeting';
 import classify from 'src/classify';
 import defaultClasses from './Foo.css';
-import CategoryList from '@magento/venia-concept/esm/components/CategoryList';
+import CategoryList from 'src/components/CategoryList';
 import CurrencyCode from './currencyCode';
 import UpdateRedux from './updateRedux';
  

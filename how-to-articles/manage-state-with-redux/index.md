@@ -21,7 +21,7 @@ _src/reducers/foo.js_
 ```javascript
 import { handleActions } from 'redux-actions';
  
-import actions from '@magento/venia-concept/esm/actions/app'; // we'll use these actions for now, and create our own one later
+import actions from 'src/actions/app'; // we'll use these actions for now, and create our own one later
  
 export const name = 'foo';
  

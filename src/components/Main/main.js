@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { bool, shape, string } from 'prop-types';
 
-import classify from '@magento/venia-concept/esm/classify';
+import classify from 'src/classify';
 import Footer from 'src/components/Footer';
 import Header from 'src/components/Header';
-import defaultClasses from '@magento/venia-concept/esm/components/Main/main.css';
+import defaultClasses from 'src/components/Main/main.css';
 
 class Main extends Component {
     static propTypes = {

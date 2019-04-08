@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions';
 
-import actions from '@magento/venia-concept/esm/actions/app';
+import actions from 'src/actions/app';
 
 export const name = 'app';
 

@@ -68,6 +68,7 @@ module.exports = async function(env) {
                 {
                     test: /\.graphql$/,
                     exclude: /node_modules\/(?!(@magento\/venia-concept)\/).*/,
+                    // exclude: /node_modules/,
                     use: [
                         {
                             loader: 'graphql-tag/loader'
@@ -117,7 +118,11 @@ module.exports = async function(env) {
         resolve: await MagentoResolver.configure({
             paths: {
                 root: __dirname
-            }
+            },
+            alias: {
+                // Inject our own dependencies so we can load Venia components independently
+                "@magento/venia-drivers": "./src/drivers",
+            },
         }),
         plugins: [
             await makeMagentoRootComponentsPlugin({

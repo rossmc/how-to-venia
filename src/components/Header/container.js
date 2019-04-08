@@ -1,7 +1,7 @@
 import { connect } from 'src/drivers';
 
 import Header from './header';
-import { toggleSearch } from '@magento/venia-concept/esm/actions/app';
+import { toggleSearch } from 'src/actions/app';
 
 const mapStateToProps = ({ app }) => {
     const { searchOpen } = app;

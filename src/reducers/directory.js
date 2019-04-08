@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions';
 
-import actions from '@magento/venia-concept/esm/actions/directory';
+import actions from 'src/actions/directory';
 
 export const name = 'directory';
 

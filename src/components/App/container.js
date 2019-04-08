@@ -1,6 +1,6 @@
 import { connect } from 'src/drivers';
 
-import appActions, { closeDrawer } from '@magento/venia-concept/esm/actions/app';
+import appActions, { closeDrawer } from 'src/actions/app';
 import App from './app';
 
 const mapStateToProps = ({ app, unhandledErrors }) => ({

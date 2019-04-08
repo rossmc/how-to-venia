@@ -1,5 +1,5 @@
 import purchaseDetailsReducer from '../purchaseDetails';
-import actions from '@magento/venia-concept/esm/actions/purchaseDetails';
+import actions from 'src/actions/purchaseDetails';
 
 test('purchaseDetails.request: toggle isFetching to true', () => {
     expect(

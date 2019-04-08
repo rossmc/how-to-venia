@@ -1,17 +1,19 @@
 # How to Venia (**work in progress**)
 ## What?
-This is a Magento 2.3.1 PWA Storefront which uses the base configuration, tools & setup from [PWA Studio's venia-concept] v2.1.0 package.  
+This is a Magento 2.3.1 PWA Storefront which is a simple copy of [PWA Studio's venia-concept] v2.1.0 package.    
+Why [re-invent the wheel]?  
 
-It does not include all the components from the venia-concept package, preferring to import components from [@magento/venia-concept] and [@magento/peregrine] which are added as project dependencies.
-
-It is also a collection of **[how-to-articles]** which can be followed to give you a basic understanding of how the venia-concept package was built and to demonstrate one method in which it could be used to create your own PWA Storefront for Magento.
+More than that, it's a collection of **[how-to-articles]** which can be followed to give you a basic understanding of how the venia-concept package was built 
+and to demonstrate one method in which it could be used to create your own PWA Storefront for Magento.
 
 ⚠️ **CAVEAT**     
 Do your own research before using this in a production environment.  
 It's not clear to me which are the recommended approaches from Magento to use [PWA Studio], and this may not be one. 
-There are other approaches out there, see [fallback-studio].
-I created this repository to share what I've learnt from exploring PWA Studio. 
-There are aspects of PWA Studio which I may not fully appreciate.   
+In-fact, while I believe a lot has been accomplished in PWA Studio, a lot is yet to be done, which will bring about change. 
+Read [what magento says].   
+There are other approaches out there too, for example see [fallback-studio], [ScandiPWA] and [DEITY Falcon].   
+**I created this repository to share what I've learnt from exploring PWA Studio.
+There are aspects of PWA Studio which I may not fully appreciate.**   
 See [TODO]
 
 ## Why?
@@ -52,7 +54,8 @@ They cover basic [React] & [PWA Studio] concepts which I think may be useful to 
 
 #### Topics
 1. [Project Setup](./how-to-articles/project-setup/index.md)
-    - [Detailed Project Setup](./how-to-articles/project-setup/detailed-project-setup.md)
+    - [Copy Venia Storefront](./how-to-articles/project-setup/copy-venia-storefront.md)
+    - [Set Venia as Project Dependency](./how-to-articles/project-setup/set-venia-as-project-dependency.md) *Optional*
 1. [Add a static route](./how-to-articles/add-a-static-route/index.md)
     - [Routing with PWA Studio](./how-to-articles/add-a-static-route/routing-with-pwa-studio.md)
 1. [Props & propTypes](./how-to-articles/props-proptypes/index.md)
@@ -100,12 +103,13 @@ Magento for creating [PWA Studio].
 
 ## TODO
 - The npm/yarn build:esm script is not working, look into fixing this.
-- Test against a local Magento v2.3.1 backend.     
-  As there could be unforeseen issues when @magento/venia-concept used the same `MAGENTO_BACKEND_URL`.
-- Experiment with VeniaAdapter to make venia components work more reliably.
+- Experiment more with VeniaAdapter to make venia components work more reliably.    
+i.e. [Set Venia as Project Dependency](./how-to-articles/project-setup/set-venia-as-project-dependency.md)
 
 [PWA Studio's venia-concept]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/
 [@magento/venia-concept]: https://www.npmjs.com/package/@magento/venia-concept
+[re-invent the wheel]: https://en.wikipedia.org/wiki/Reinventing_the_wheel
+[what magento says]: https://community.magento.com/t5/Magento-DevBlog/PWA-Studio-2-1-0-has-been-released/ba-p/127492
 [@magento/peregrine]: https://www.npmjs.com/package/@magento/peregrine
 [how-to-articles]: #How-to-Articles
 [TODO]: #TODO
@@ -114,6 +118,8 @@ Magento for creating [PWA Studio].
 [@magento]: https://www.npmjs.com/org/magento
 [Yarn Workspaces]: https://yarnpkg.com/en/docs/workspaces/
 [fallback-studio]: https://github.com/Jordaneisenburger/fallback-studio
+[ScandiPWA]: https://scandipwa.com/
+[DEITY Falcon]: https://github.com/deity-io/falcon
 [./how-to-articles/]: ./how-to-articles/
 [PWA Studio]: https://github.com/magento-research/pwa-studio
 [React]: https://reactjs.org/

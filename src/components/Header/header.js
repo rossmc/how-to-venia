@@ -1,18 +1,18 @@
 import React, { Component, Suspense } from 'react';
 import PropTypes from 'prop-types';
 
-import classify from '@magento/venia-concept/esm/classify';
+import classify from 'src/classify';
 import { Link, resourceUrl, Route } from 'src/drivers';
-import Icon from '@magento/venia-concept/esm/components/Icon';
+import Icon from 'src/components/Icon';
 import SearchIcon from 'react-feather/dist/icons/search';
 import MenuIcon from 'react-feather/dist/icons/menu';
-import CartTrigger from '@magento/venia-concept/esm/components/Header/cartTrigger';
-import NavTrigger from '@magento/venia-concept/esm/components/Header/navTrigger';
-import SearchTrigger from '@magento/venia-concept/esm/components/Header/searchTrigger';
+import CartTrigger from './cartTrigger';
+import NavTrigger from './navTrigger';
+import SearchTrigger from './searchTrigger';
 
-const SearchBar = React.lazy(() => import('@magento/venia-concept/esm/components/SearchBar'));
+const SearchBar = React.lazy(() => import('src/components/SearchBar'));
 
-import defaultClasses from '@magento/venia-concept/esm/components/Header/header.css';
+import defaultClasses from './header.css';
 import Logo from '../Logo';
 
 class Header extends Component {

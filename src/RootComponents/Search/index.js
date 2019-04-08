@@ -3,5 +3,5 @@
  * description = 'Basic Search'
  * pageTypes = SEARCH
  */
-export { default as Search } from '@magento/venia-concept/esm/RootComponents/Search/search';
-export { default } from '@magento/venia-concept/esm/RootComponents/Search/container';
+export { default as Search } from './search';
+export { default } from './container';

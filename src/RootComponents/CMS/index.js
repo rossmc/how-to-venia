@@ -4,4 +4,4 @@
  * pageTypes = CMS_PAGE
  */
 
-export { default } from '@magento/venia-concept/esm/RootComponents/CMS/CMS';
+export { default } from './CMS';

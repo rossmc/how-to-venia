@@ -5,7 +5,7 @@ const { BrowserPersistence } = Util;
 
 const storage = new BrowserPersistence();
 
-import actions from '@magento/venia-concept/esm/actions/user';
+import actions from 'src/actions/user';
 
 export const name = 'user';
 

@@ -2,7 +2,7 @@
 This project is based on PWA Studio v2.1.0.  Please ensure you have the correct [stack prerequisites] installed locally before continuing.
 
 ### 1. Clone this repository
-Simply start by cloning this repository or read the [Detailed Project Setup] doc to see how this repository was created.
+Simply start by cloning this repository or read the [copy-venia-storefront doc] to see how this repository was created.
 ```bash
 git clone git@github.com:rossmc/how-to-venia.git
 cd how-to-venia
@@ -36,7 +36,7 @@ yarn start
 - [> see other topics](../../README.md#Topics)
 
 [stack prerequisites]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/setup/#prerequisites
-[Detailed Project Setup]: ./detailed-project-setup.md
+[copy-venia-storefront doc]: ./copy-venia-storefront.md
 [package.json]: ../../package.json#L2
 [.env]: ../../.env
 [Specify the Magento backend server]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/setup/#step-3-specify-the-magento-backend-server

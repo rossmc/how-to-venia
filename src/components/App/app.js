@@ -2,13 +2,13 @@ import React, { Component, Fragment } from 'react';
 import { array, bool, func, shape, string } from 'prop-types';
 
 import Main from 'src/components/Main';
-import Mask from '@magento/venia-concept/esm/components/Mask';
-import MiniCart from '@magento/venia-concept/esm/components/MiniCart';
-import Navigation from '@magento/venia-concept/esm/components/Navigation';
-import OnlineIndicator from '@magento/venia-concept/esm/components/OnlineIndicator';
-import ErrorNotifications from '@magento/venia-concept/esm/components/App/errorNotifications';
+import Mask from 'src/components/Mask';
+import MiniCart from 'src/components/MiniCart';
+import Navigation from 'src/components/Navigation';
+import OnlineIndicator from 'src/components/OnlineIndicator';
+import ErrorNotifications from './errorNotifications';
 import renderRoutes from './renderRoutes';
-import errorRecord from '@magento/venia-concept/esm/util/createErrorRecord';
+import errorRecord from 'src/util/createErrorRecord';
 
 class App extends Component {
     static propTypes = {

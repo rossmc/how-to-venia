@@ -1,39 +1,13 @@
-# Detailed Project Setup
-Rather than clone this repository you can set up your own by following the instructions below to pull the [@magento/venia-concept] package from the pwa-studio monorepo to create your own PWA Storefront based upon.
+# Set Venia as a Project Dependency
+Once you have [a copy of the venia storefront], you could make the [@magento/venia-concept] a dependency of your project and then begin to replace components in your project with ones which you import from the @magento/venia-concept package.
 
-After you have a copy of the venia storefront, you can make the [@magento/venia-concept] a dependency of your project and then begin to replace components in your project with ones which you import from the @magento/venia-concept package.
+It's also worth noting that magento themselves have a small example of this approach in their [venia-consumer-example repo].
 
-### 1. Clone & Copy
-Use the following commands to clone the pwa-studio mono repo and copy it's venia concept to use as your projects base setup.
-```bash
-git clone https://github.com/magento-research/pwa-studio.git pwa-studio-temp
-cd pwa-studio-temp
+I've tried this approach but have found difficulty in overriding `graphql` queries, and generally, it does not seem to work reliably.  If you find otherwise, please let me know :smile: 
 
-# Chekout the latest version
-git checkout tags/v2.1.0 -b v2.1.0
+With that said, this is the approach I followed after I made [a copy of the venia storefront]
 
-# make a copy of the venia-concept package
-cp -r packages/venia-concept ../how-to-venia
-
-# we also need to copy some files from the workspace root directory of the pwa-studio monorepo
-cp babel.config.js ../how-to-venia/
-cp browserslist.js ../how-to-venia/
-cp magento-compatibility.js ../how-to-venia/
-
-# install dependencies
-cd ../how-to-venia/
-yarn install
-
-# add a dependencies which are handled by PWA Studio in their workspace root
-yarn add -D babel-plugin-module-resolver babel-eslint
-
-# Create enviroment variables file, uses public Magento backend by default
-cp .env.dist .env
-```
-
-You can stop here and continue to [Step 2] of the project setup with a like for like copy of the Venia Concept storefront.  Alternativly you can continue to and use [@magento/venia-concept] as a dependency in your project.
-
-### 2. Setup @magento/venia-concept as a dependency
+### 1. Setup @magento/venia-concept as a dependency
 The idea is that your PWA Storefront will use the tools from PWA Studio rather than just copy them.  Therefore we need to also add the [@magento/venia-concept] package as a dependency, and import the components it provides.
 
 After we have @magento/venia-concept set up as a dependency we'll begin replacing components in the project with ones which we import from it, bit by bit, testing as we go.
@@ -44,7 +18,7 @@ Lets begin by simply adding the package as a dependency:
 yarn add -D @magento/venia-concept@2.1.0
 ```
 
-#### Update webpack.config.js
+### 2. Update webpack.config.js
 Next you need to make the following change to _webpack.config.js_ so that your build correctly parses `.graphql` files from the _@magento/venia-concept_ pacakge:
 ```diff
 webpack.config.js
@@ -71,7 +45,7 @@ webpack.config.js
  
 ```
 
-#### Update RootComponents
+### 3. Update RootComponents
 Next update the _RootComponents_ to use components from the [@magento/venia-concept] pacakge as shown in the below DIFF.
 ```diff
 diff --git a/src/RootComponents/CMS/index.js b/src/RootComponents/CMS/index.js
@@ -140,7 +114,7 @@ cd ../..
 
 Test that your changes work by continuing to [Step 2], [Step 3] and [Step 4] of the project setup before returning to [Update src/components]
 
-### Update src/components
+### 4. Update src/components
 Similarly do the same for the following components in the _src/components/_ directory.
 
 **NOTE:** We will replace many the local components with those imported from the [@magento/venia-concept] package, in realiity you may want to keep some in your project locally as you plan to customise them.  
@@ -233,7 +207,7 @@ import Header from 'src/components/Header';
 
  Test the app by running `yarn watch` before continuing.
 
-### Update the classify componet
+### 5. Update the classify componet
 Update your project's to use the classify component from [@magento/venia-concept].
 ```diff
 diff --git a/src/components/Header/header.js b/src/components/Header/header.js
@@ -277,7 +251,7 @@ index 56ff9a5..9df2394 100644
 ```
 Then `rm src/classify.js` and test the app by running `yarn watch` before continuing.
 
-### Remove middleware/ selectors/ shared/ & util/ directories
+### 6. Remove middleware/ selectors/ shared/ & util/ directories
 Before removing these folders you need to make sure your app imports them from [@magento/venia-concept] by updating the files below:
 ```diff
 diff --git a/src/actions/checkout/asyncActions.js b/src/actions/checkout/asyncActions.js
@@ -332,7 +306,7 @@ index 55f9802..03c431a 100644
 
 Then `rm -rf src/middleware src/selectors src/shared src/util` and test the app by running `yarn watch` before continuing.
 
-### Remove actions/ directory
+### 7. Remove actions/ directory
 Before removing the `src/actions` folder you need to make sure your app imports them from [@magento/venia-concept] by updating the files below:
 ```diff
 diff --git a/src/components/App/container.js b/src/components/App/container.js
@@ -574,7 +548,7 @@ index ce1fcd4..fcde6fe 100755
 
 Then `rm -rf src/actions` and test the app by running `yarn watch` before continuing.
 
-### Keep directory and files
+### 8. Keep directory and files
 As far as I could find, you cannot remove the following directory and files without breaking the app.
 - src/drivers/
 - src/queries/
@@ -583,9 +557,12 @@ As far as I could find, you cannot remove the following directory and files with
 - src/components/Trigget/trigger.css (same as above)
 - src/components/clickable.css (similar to above)
 
+
 ---
 - [> see other topics](../../README.md#Topics)
 
+[a copy of the venia storefront]: ./copy-venia-storefront.md
+[venia-consumer-example repo]: https://github.com/magento-research/venia-consumer-example
 [Step 2]: ./index.md#2-change-the-name-of-your-project
 [Step 3]: ./index.md#3-pdate-enviroment-variables
 [Step 4]: ./index.md#4-tart-the-app

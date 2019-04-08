@@ -1,5 +1,5 @@
 import reducer, { initialState } from '../catalog';
-import actions from '@magento/venia-concept/esm/actions/catalog';
+import actions from 'src/actions/catalog';
 
 const state = { ...initialState };
 

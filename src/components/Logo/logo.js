@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import classify from '@magento/venia-concept/esm/classify';
+import classify from 'src/classify';
 import logo from './logo.svg';
 
 class Logo extends Component {

@@ -1,4 +1,4 @@
-import actions from '@magento/venia-concept/esm/actions/checkoutReceipt';
+import actions from 'src/actions/checkoutReceipt';
 import reducer from '../checkoutReceipt';
 
 const order = { id: 1, billing_address: {} };

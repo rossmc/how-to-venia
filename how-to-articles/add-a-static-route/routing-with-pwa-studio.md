@@ -1,7 +1,15 @@
 # Routing in PWA Studio
 Routing in PWA studio is complex, it needs to consider all the different types of routes from Magento (category, product, CMS, customer, sales etc) as well as all the URL rewrites which Magento offers. This article aims to walk through how routing works in PWA Studio to help you gain a better understanding of it.
 
-First lets look in the entry point of the venia-concept package in [packages/venia-concept/src/index.js].
+## Server Side Routing
+The Venia storefront use a the [Upward] server middlware from PWA Studio to proxy requests from the user's client.  It allows you to configure how requests are proxied with the [./venia-upward.yml] file.  
+
+Upward pre-renders the [application shell] with mustache templates found in the [./templates/] directory and sends them to the client. To get a better idea of how PWA Studio's Upward server works, it's recommend to complete the [Hello UPWARD Tutorial] from Magento.
+
+## React Routing
+Once the client loads the first webpage all other requests are hanled by the React App like any other Single Page App. It re-renders its content in response to navigation actions (e.g. clicking a link) without making a request to the server to fetch new HTML and without refreshing my page.
+
+To see how the Venia storefront handles routing, first lets look in the entry point of the app in [packages/venia-concept/src/index.js].
 What React component is it rendering? [`<App>`].
 Check at the top of the file to see where this component is coming from from, [at line 9].
 
@@ -20,7 +28,9 @@ If the URL doesn’t exist, Magento 2 will send out a 404 error (temporary until
 
 All Root Component folders must be placed in the `rootComponentsDirs` path defined in [webpack.config.js#L25], **src/RootComponents/**.
 
-In this directory you will find it's components each have an _index.js_ entry point.  These files are important as webpack uses the commented section to define the pageType for a specific page type. See [src/RootComponents/Category/index.js]
+In this directory you will find it's components each have an _index.js_ entry point.  
+These files are important as webpack uses the commented section to define the pageType for a specific page type. See [src/RootComponents/Category/index.js].  
+Similarly, [Upward] uses the pageType to sent the pre-rendered application shell, see [./venia-upward.yml#L98].
 
 > As you can see, the commented section in index.js defines the RootComponent for a specific page type. If we change pageTypes variable value to PRODUCT (webpack restart is required to perform code-splitting again), this component will be used for Product page, and not for CMS page as specified previously.
 >
@@ -57,3 +67,9 @@ Since Magento's GraphQL is still in development, page types are limited to the t
 [CmsUrlRewriteGraphQl schema]: https://github.com/magento/magento2/blob/2.3-develop/app/code/Magento/CmsUrlRewriteGraphQl/etc/schema.graphqls#L5
 [Routing with PWA Studio]: https://magento-research.github.io/pwa-studio/peregrine/routing/
 [Magento PWA Studio: Routing and Root Components]: https://inchoo.net/magento-2/magento-pwa-studio-routing-root-components/
+[Upward]: https://magento-research.github.io/pwa-studio/technologies/upward/
+[./venia-upward.yml#L98]: https://github.com/magento-research/pwa-studio/blob/v2.1.0/packages/venia-concept/venia-upward.yml#L98
+[./venia-upward.yml]: https://github.com/magento-research/pwa-studio/blob/v2.1.0/packages/venia-concept/venia-upward.yml
+[application shell]: https://magento-research.github.io/pwa-studio/technologies/basic-concepts/app-shell/
+[./templates/]: https://github.com/magento-research/pwa-studio/tree/v2.1.0/packages/venia-concept/templates
+[Hello UPWARD Tutorial]: https://magento-research.github.io/pwa-studio/tutorials/hello-upward/simple-server/

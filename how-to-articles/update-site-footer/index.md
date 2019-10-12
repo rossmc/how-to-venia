@@ -1,13 +1,49 @@
 # Add a link to the Footer
 The project is set up to import the Footer component from @magento/venia-concept.
-Let replace it with our own by copying the Footer component from Venia to our own storefront.     
-`cp -R  node_modules/\@magento/venia-concept/src/components/Footer src/components/`
+Copy the _Main_ and _Footer_ component from the _@magento/venia-ui_ package.
+```bash
+cp -R node_modules/@magento/venia-ui/lib/components/Main src/components/
+cp -R node_modules/@magento/venia-ui/lib/components/Footer src/components/
+```
 
-Next in _src/components/Main/main.js_ change the import statement for the footer to:    
-`import Footer from 'src/components/Footer';`
+Then update the `import` statements for these components.
 
-Not the Project will load our local Footer component.  We need to add React's Link element which we get from _src/drivers_:     
-`import { Link } from 'src/drivers';`
+_[/src/components/Footer/footer.js]_
+```javascript
+import React, { useEffect } from 'react';
+import { shape, string } from 'prop-types';
+
+import { useQuery } from '@magento/peregrine';
+import { mergeClasses } from '@magento/venia-ui/lib/classify';
+import defaultClasses from './footer.css';
+import storeConfigDataQuery from '@magento/venia-ui/lib/queries/getStoreConfigData.graphql';
+```
+
+_[/src/components/Main/main.js]_
+```javascript
+import React from 'react';
+import { bool, shape, string } from 'prop-types';
+import { useScrollLock } from '@magento/peregrine';
+
+import { mergeClasses } from '@magento/venia-ui/lib/classify';
+import Footer from '../Footer';
+import Header from '@magento/venia-ui/lib/components/Header';
+import defaultClasses from './main.css';
+```
+
+In _[/src/components/App/app.js]_ change:
+```javascript
+import Main from '@magento/venia-ui/lib/components/Main';
+```
+To:
+```javascript
+import Main from '../Main';
+```
+
+Now the Project should load our new Footer component.  To add a link to the footer, we need to add React's Link element which we get via [venia-ui/lib/drivers]:     
+```javascript
+import { Link } from '@magento/venia-ui/lib/drivers';
+```
 
 Finally add the below JSX to render the Link for the _foo.html_ static route:
 ```javascript
@@ -21,4 +57,8 @@ Finally add the below JSX to render the Link for the _foo.html_ static route:
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
+
+[/src/components/App/app.js]: /src/components/App/app.js
+[/src/components/Main/main.js]: /src/components/Main/main.js
+[/src/components/Footer/footer.js]: /src/components/Footer/footer.js
+[venia-ui/lib/drivers]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/drivers

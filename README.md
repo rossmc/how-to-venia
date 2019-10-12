@@ -1,4 +1,4 @@
-# How to Venia (**work in progress**)
+# How to Venia
 ## What?
 This is a Magento 2.3.1 PWA Storefront built with [PWA Studio] v4 new scaffolding mechanism which creates a PWA Studio app based on the [Venia Storefront (Concept)] storefront.
 

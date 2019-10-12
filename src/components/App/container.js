@@ -1,16 +1,23 @@
-import { connect } from 'src/drivers';
+import React from 'react';
+import { useAppContext } from '@magento/peregrine/lib/context/app';
+import { useErrorContext } from '@magento/peregrine/lib/context/unhandledErrors';
 
-import appActions, { closeDrawer } from 'src/actions/app';
 import App from './app';
+import { useErrorBoundary } from './useErrorBoundary';
 
-const mapStateToProps = ({ app, unhandledErrors }) => ({
-    app,
-    unhandledErrors
-});
-const { markErrorHandled } = appActions;
-const mapDispatchToProps = { closeDrawer, markErrorHandled };
+const AppContainer = () => {
+    const ErrorBoundary = useErrorBoundary(App);
+    const [appState, appApi] = useAppContext();
+    const [unhandledErrors, errorApi] = useErrorContext();
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(App);
+    return (
+        <ErrorBoundary
+            unhandledErrors={unhandledErrors}
+            app={appState}
+            {...appApi}
+            {...errorApi}
+        />
+    );
+};
+
+export default AppContainer;

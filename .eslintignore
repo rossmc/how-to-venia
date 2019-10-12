@@ -1,0 +1,4 @@
+# Minified build assets
+dist/
+# Generated coverage pages
+coverage

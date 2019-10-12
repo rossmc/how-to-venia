@@ -204,7 +204,7 @@ Now test it by typing into the new input box while checking Redux dev tools to s
 [Redux]: https://redux.js.org/
 [Redux DevTools]: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
 [Venia storefront]: https://veniapwa.com/
-[docs]: https://magento-research.github.io/pwa-studio/venia-pwa-concept/project-structure/
+[docs]: https://magento.github.io/pwa-studio/venia-pwa-concept/project-structure/
 [handleActions]: https://redux-actions.js.org/api/handleaction
 [switch statement]: https://redux.js.org/basics/reducers#handling-more-actions
 [redux action]: https://redux.js.org/basics/actions

@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { setContext } from 'apollo-link-context';
 import { Util } from '@magento/peregrine';
-
-import { Adapter } from 'src/drivers';
-import store from 'src/store';
-import app from 'src/actions/app';
-import App from 'src/components/App';
+import { Adapter } from '@magento/venia-drivers';
+import store from './store';
+import app from '@magento/peregrine/lib/store/actions/app';
+import App, { AppContextProvider } from './components/App';
 import './index.css';
 
 const { BrowserPersistence } = Util;
@@ -18,9 +17,8 @@ const apiBase = new URL('/graphql', location.origin).toString();
  * so we add an auth implementation here and prepend it to the Apollo Link list.
  */
 const authLink = setContext((_, { headers }) => {
-    // get the authentication token from local storage if it exists
+    // get the authentication token from local storage if it exists.
     const storage = new BrowserPersistence();
-    // TODO: Get correct token expire time from API
     const token = storage.getItem('signin_token');
 
     // return the headers to the context so httpLink can read them
@@ -38,22 +36,27 @@ ReactDOM.render(
         apollo={{ link: authLink.concat(Adapter.apolloLink(apiBase)) }}
         store={store}
     >
-        <App />
+        <AppContextProvider>
+            <App />
+        </AppContextProvider>
     </Adapter>,
     document.getElementById('root')
 );
 
-if (process.env.SERVICE_WORKER && 'serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
+if (
+    process.env.NODE_ENV === 'production' ||
+    process.env.DEV_SERVER_SERVICE_WORKER_ENABLED
+) {
+    window.addEventListener('load', () =>
         navigator.serviceWorker
-            .register(process.env.SERVICE_WORKER)
+            .register('/sw.js')
             .then(registration => {
                 console.log('Service worker registered: ', registration);
             })
             .catch(error => {
                 console.log('Service worker registration failed: ', error);
-            });
-    });
+            })
+    );
 }
 
 window.addEventListener('online', () => {

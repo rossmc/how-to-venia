@@ -1,6 +1,6 @@
 # Manage State with Redux
 
-PWA Studio's Venia storefront uses [Redux] to manage the appliction state. If you're not familiar with Redux you should do some reseach online so you have basic understanding of it.  
+PWA Studio's Venia storefront uses [Redux] to manage the application state. If you're not familiar with Redux you should do some research online so you have basic understanding of it.  
 
 ### Introduction
 First lets look at how PWA Studio uses Redux by installing the [Redux DevTools] extension for Chrome.  Once you have it installed, browse to the [Venia storefront] and explore what it has in it's Redux Store.
@@ -8,11 +8,11 @@ First lets look at how PWA Studio uses Redux by installing the [Redux DevTools] 
 
 Next explore the following files & directories in the venia-concept package and look up their description in the [docs].
 
-1. [src/index.js](https://github.com/magento-research/pwa-studio/blob/v2.1.0/packages/venia-concept/src/index.js#L6-L7)
-2. [src/store.js](https://github.com/magento-research/pwa-studio/blob/v2.1.0/packages/venia-concept/src/store.js)
-3. [src/reducers](https://github.com/magento-research/pwa-studio/tree/v2.1.0/packages/venia-concept/src/reducers)
-4. [src/actions](https://github.com/magento-research/pwa-studio/tree/v2.1.0/packages/venia-concept/src/actions)
-5. [src/middleware](https://github.com/magento-research/pwa-studio/tree/v2.1.0/packages/venia-concept/src/middleware)
+1. [src/index.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/src/index.js#L7-L8)
+2. [src/store.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/src/store.js)
+3. [src/reducers](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/store/reducers)
+4. [src/actions](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/store/actions)
+5. [src/middleware](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/store/middleware)
 
 ### Add to The Redux Store
 Create the following file...
@@ -20,29 +20,32 @@ Create the following file...
 _src/reducers/foo.js_
 ```javascript
 import { handleActions } from 'redux-actions';
- 
-import actions from 'src/actions/app'; // we'll use these actions for now, and create our own one later
- 
+
+import actions from '@magento/peregrine/lib/store/actions/app'; // we'll use these actions for now, and create our own one later
+
 export const name = 'foo';
- 
+
 const initialState = {
-    test: 'lorem ipsum'
+  test: 'lorem ipsum'
 };
- 
+
 const reducerMap = {
-    [actions.toggleDrawer]: (state, { payload }) => {
-        return {
-            ...state,
-            test: payload
-        };
-    }
+  [actions.toggleDrawer]: (state, { payload }) => {
+    return {
+      ...state,
+      test: payload
+    };
+  }
 };
- 
+
 export default handleActions(reducerMap, initialState);
 ```
 
 Pay note of [handleActions] which replaces the traditional [switch statement] often used in Reducers.
 
+Now we need to copy a _reducer/_ file from the _venia-ui/lib_.
+```bash
+```
 Now go to the src/reducers/index.js file and the following import for the file you just created:     
 `import foo from './foo';`
 

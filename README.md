@@ -24,7 +24,6 @@ They cover basic [React] & [PWA Studio] concepts which I think may be useful to 
 1. [Props & propTypes](./how-to-articles/props-proptypes/index.md)
 1. [CSS Modules](./how-to-articles/css-modules/index.md)
 1. [Configure CSS modules to use SCSS](./how-to-articles/css-modules-for-scss/index.md) (TODO)
-1. [Replace the CSS for the Header](./how-to-articles/replace-header-css/index.md)
 1. [Component State](./how-to-articles/component-state/index.md)
 1. [Reuse a PWA Studio component](./how-to-articles/reuse-a-venia-component/index.md)
 1. [Explore Magento's GraphQL API in GraphiQL](./how-to-articles/explore-graphql-with-graphiql/index.md)

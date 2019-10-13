@@ -1,0 +1,27 @@
+.root {
+  padding: 3rem 1rem 1rem;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.title,
+.greeting {
+  padding-bottom: .5rem;
+}
+
+.spacer {
+  max-width: 500px;
+  border-color: #ddd;
+  border-top: 0;
+  margin: 36px auto;
+}
+
+.label {
+  color: #666;
+  padding-bottom: 8px;
+  font-style: italic;
+  font-size: 14px;
+}

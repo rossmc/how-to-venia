@@ -1,18 +1,19 @@
 # Component State
-We'll create a simple [controlled form element] for our Foo component to demonstrate how [component state] is used in React .  
+We'll create a simple [controlled form element] for our Foo component to demonstrate how [component state] is used in React.    
+_i.e. controlled form elements are similar to KnockoutJS observables use in Magento2_
 
 First add the state object to the Foo component and a function to handle when it changes.
 ```javascript
 class Foo extends Component {
-    state = {
-        name: ''
-    };
-     
-    handleChange = (e) => {
-        this.setState({name: e.target.value});
-    };
+  state = {
+    name: ''
+  };
+
+  handleChange = (e) => {
+    this.setState({ name: e.target.value });
+  };
     
-    // other code...
+  // other code...
 ```
 
 Then add the following JSX:
@@ -27,7 +28,6 @@ Now test this element on the storefront and see how it automatically updates as 
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [controlled form element]: https://reactjs.org/docs/forms.html#controlled-components
 [component state]: https://reactjs.org/docs/faq-state.html

@@ -4,7 +4,7 @@ This project is based on PWA Studio v4.  Please ensure you have the correct [sta
 ## Overview
 We are going to create a PWA Studio app with it's scaffolding mechanism available from it's `npm init @magento/pwa` command.
 
-This command will create a PWA Studio based on the it's [Venia Storefront (Concept)] as demo'd at venia.magento.com.   
+This command will create a PWA Studio based on the it's [Venia Storefront (Concept)] as demo'd at [venia.magento.com].   
 It will only generate the minimum amount of files necessary, and will use the Venia [modular components] available from 
 the _venia-concept_, _venia-ui_, _peregrine_ and _pwa-buildpack_ packages.    
 
@@ -47,6 +47,7 @@ See the PWA Studio docs on [Choosing the Magento 2.3 backend] for more details.
 - [> see other topics](../../README.md#Topics)
 
 [Venia Storefront (Concept)]: https://magento.github.io/pwa-studio/venia-pwa-concept/
+[venia.magento.com]: http://venia.magento.com/
 [stack prerequisites]: https://magento.github.io/pwa-studio/venia-pwa-concept/setup/#prerequisites
 [copy-venia-storefront doc]: ./copy-venia-storefront.md
 [package.json]: ../../package.json#L2

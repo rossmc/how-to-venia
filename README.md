@@ -69,6 +69,7 @@ Magento for creating [PWA Studio].
 i.e. [Set Venia as Project Dependency](./how-to-articles/project-setup/set-venia-as-project-dependency.md)
 
 [PWA Studio]: https://magento.github.io/pwa-studio/
+[venia.magento.com]: http://venia.magento.com/
 [Venia Storefront (Concept)]: https://magento.github.io/pwa-studio/venia-pwa-concept/
 [@magento/venia-concept]: https://www.npmjs.com/package/@magento/venia-concept
 [re-invent the wheel]: https://en.wikipedia.org/wiki/Reinventing_the_wheel

@@ -22,5 +22,5 @@ In subsequent topics we will explore how your project can be customised followin
 [@magento/venia-ui]: https://www.npmjs.com/package/@magento/venia-ui
 [Venia Storefront (Concept)]: https://magento.github.io/pwa-studio/venia-pwa-concept/
 [Venia project structure]: https://magento.github.io/pwa-studio/venia-pwa-concept/project-structure/
-[Modular components]: https://github.com/magento/pwa-studio/blob/v4.0.0/pwa-devdocs/src/venia-pwa-concept/features/modular-components/index.md
+[Modular components]: https://magento.github.io/pwa-studio/venia-pwa-concept/features/modular-components/
 [Update site Footer]: ../update-site-footer/index.md

@@ -92,4 +92,4 @@ Magento for creating [PWA Studio].
 [React]: https://reactjs.org/
 [monorepo]: https://github.com/magento/pwa-studio/#about-this-repository
 [v1.0.0 of this repo]: https://github.com/rossmc/how-to-venia/tree/1.0.0
-[scaffolding mechanism]: https://www.youtube.com/watch?v=RfVnNfJ6sKk&feature=youtu.be&t=1250
+[scaffolding mechanism]: https://github.com/magento/pwa-studio/blob/develop/pwa-devdocs/_drafts/scaffolding/index.md

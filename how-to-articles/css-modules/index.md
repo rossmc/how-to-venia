@@ -33,7 +33,7 @@ _[/src/components/Foo/Foo.css]_
 }
 ```
 
-Import the PWA studio's classify [HOC] and the CSS classes from the above _Foo.css_ into the Foo component:    
+Import the PWA studio's mergeClasses component and the CSS classes from the above _Foo.css_ into the Foo component:    
 ```javascript
 import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import defaultClasses from './Foo.css';

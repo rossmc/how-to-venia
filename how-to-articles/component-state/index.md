@@ -17,7 +17,7 @@ class Foo extends Component {
 ```
 
 Then add the following JSX:
-```javascript
+```jsx
 <hr className={classes.spacer}/>
 <p className={classes.label}>A React controlled input element:</p>
 <input type="text" value={this.state.name} onChange={this.handleChange}/>

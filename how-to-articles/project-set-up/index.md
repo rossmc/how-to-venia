@@ -10,6 +10,8 @@ the _venia-concept_, _venia-ui_, _peregrine_ and _pwa-buildpack_ packages.
 
 As we progress we will replace some of these modular components with our own custom ones.
 
+_For more information see the Magento docs on [scaffolding]._
+
 ### 1. Install
 Simply start by running the below NPM command.
 ```bash
@@ -20,7 +22,7 @@ Answers the questions from the `npm init @magento/pwa` command.
 ![npm init @magento/pwa questions](./npm-init-questions.png)
 
 _Please Note: the `npm init @magento/pwa@cdmuc19` command is currently a prototype from Magento._
-_Magento are yet to release this command officially._
+_Magento are yet to release this sacffolding command officially._
 
 ### 2. Add custom hostname and SSL cert
 For the best PWA development experience, create a custom domain for by running:
@@ -54,3 +56,4 @@ See the PWA Studio docs on [Choosing the Magento 2.3 backend] for more details.
 [.env]: ../../.env.example
 [Choosing the Magento 2.3 backend]: https://magento.github.io/pwa-studio/venia-pwa-concept/setup/#choosing-the-magento-23-backend
 [modular components]: https://magento.github.io/pwa-studio/venia-pwa-concept/features/modular-components/
+[scaffolding]: https://github.com/magento/pwa-studio/blob/develop/pwa-devdocs/_drafts/scaffolding/index.md

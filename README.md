@@ -14,7 +14,7 @@ PWA Studio has not offered a clear way of setting up a PWA Studio app until rece
 Previously you needed to clone their [monorepo] which was not a straightforward process, _(see [v1.0.0 of this repo])_.
 
 Fortunately, PWA Studio improves this process with their new scaffolding mechanism, 
-currently this is only on pre-release and has little documentation.  
+currently this is only available with a prototype command and has little documentation.  
 
 Here I share my understanding of how it can work and be used to create your own custom PWA Studio storefront.
 

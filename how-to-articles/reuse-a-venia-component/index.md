@@ -8,7 +8,7 @@ import CategoryList from '@magento/venia-ui/lib/components/CategoryList';
 
 Next add the following JSX.
 
-```javascript
+```jsx
 <hr className={classes.spacer} />
 <p className={classes.label}>Reuse of a the PWA Studio component to render a category list:</p>
 <CategoryList title="Foo Recommends" id={2} />

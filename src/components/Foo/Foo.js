@@ -3,6 +3,7 @@ import Greeting from './greeting';
 import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import defaultClasses from './Foo.css';
 import CategoryList from '@magento/venia-ui/lib/components/CategoryList';
+import ProductLink from './productLink'
 
 class Foo extends Component {
   state = {
@@ -32,6 +33,9 @@ class Foo extends Component {
         <hr className={classes.spacer} />
         <p className={classes.label}>Reuse of a the PWA Studio component to render a category list:</p>
         <CategoryList title="Foo Recommends" id={2} />
+        <hr className={classes.spacer} />
+        <p className={classes.label}>A custom react component which uses graphql</p>
+        <ProductLink sku="VT11" />
       </div>
     );
   }

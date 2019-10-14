@@ -1,0 +1,11 @@
+query GetProductData($sku: String!) {
+  products (filter: {sku: {eq: $sku}}){
+    items {
+      name,
+      url_key,
+    	image {
+    	  url
+    	}
+    }
+  }
+}

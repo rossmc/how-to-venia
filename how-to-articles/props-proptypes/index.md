@@ -23,7 +23,7 @@ import Greeting from './greeting';
 
 Render the Greeting component in the Foo component, passing in your name as a property.    
 _remember you need to wrap multiple JSX elements in a react fragment or a wrapper div_    
-```javascript
+```jsx
 <Greeting name="Joe Bloggs" />
 ```
 

@@ -49,7 +49,7 @@ import Search from '@magento/venia-ui/lib/RootComponents/Search';
 
 Next, in the same file, just after the `create-account` route add the following static route with inline [JSX]:
 
-```javascript
+```jsx
 <Route exact path="/foo.html" render={() => <h3>Hello World JSX.</h3>}/>
 ```
 

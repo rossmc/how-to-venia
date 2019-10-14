@@ -39,7 +39,7 @@ import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import defaultClasses from './Foo.css';
 ```
 
-Use [es6's destructuring] syntax to assign class names added to REACT props by the classify HOC to a const within the *render()* function:    
+Assign the class names fromm the css file you imported:    
 ```javascript
 const classes = mergeClasses(defaultClasses);
 ```

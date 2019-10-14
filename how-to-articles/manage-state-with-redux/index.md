@@ -2,6 +2,8 @@
 
 PWA Studio's Venia storefront uses [Redux] to manage the application state. If you're not familiar with Redux you should do some research online so you have basic understanding of it.  
 
+_Note: Recent versions of PWA Studio now also use React Hooks to manage state._
+
 ### Introduction
 First lets look at how PWA Studio uses Redux by installing the [Redux DevTools] extension for Chrome.  Once you have it installed, browse to the [Venia storefront] and explore what it has in it's Redux Store.
 ![redux store in devtools](./redux-store-screenshot.png)
@@ -17,7 +19,7 @@ Next explore the following files & directories in the venia-concept package and 
 ### Add to The Redux Store
 Create the following file...
 
-_src/reducers/foo.js_
+_[/src/reducers/foo.js]_
 ```javascript
 import { handleActions } from 'redux-actions';
 
@@ -43,20 +45,41 @@ export default handleActions(reducerMap, initialState);
 
 Pay note of [handleActions] which replaces the traditional [switch statement] often used in Reducers.
 
-Now we need to copy a _reducer/_ file from the _venia-ui/lib_.
-```bash
-```
-Now go to the src/reducers/index.js file and the following import for the file you just created:     
-`import foo from './foo';`
+Next Create the following file...
 
-Then add `foo` to the exported combineReducers function.
+_[/src/reducers/index.js]_
+```javascript
+import foo from './foo';
+
+const reducers = {
+  foo
+};
+
+export default reducers;
+```
+
+Next in your applications [/src/store.js] update the `import` statements to include your local _reducers_ and combine them with the _reducers_ from @magento/peregrine:
+```javascript
+import { combineReducers, createStore } from 'redux';
+import { enhancer, reducers as peregrineReducers } from '@magento/peregrine';
+import localReducers from './reducers';
+
+const rootReducer = combineReducers({ ...peregrineReducers, ...localReducers });
+
+export default createStore(rootReducer, enhancer);
+```
 
 Now check to the  storefront and you should be able to see foo.test added to the Redux State, open & close the navigation menu and it should update.
+![foo in the redux store](./foo-in-the-redux-store.gif)
 
-### Get from The Redux Store
-We'll display the foo.test value we set in the Redux store in the Foo component we created earlier.  Open the src/components/Foo/Foo.js file and add the following import.
+### Get from the Redux Store
+We'll display the foo.test value we set in the Redux store in the Foo component we created earlier.  
 
-`import { connect } from 'src/drivers'; // this includes connect from react-redux`
+Open the [/src/components/Foo/Foo.js] file and add the following import.
+
+```javascript
+import { connect } from 'react-redux';
+```
 
 Now replace the export statement with the following:
 ```javascript
@@ -65,46 +88,12 @@ export default connect(mapStateToProps)(classify(defaultClasses)(Foo));
 ```
 
 And add the following to your JSX:
-```javascript
-<hr className={classes.spacer}/>
-<p className={classes.label}>The Text below is from Redux:</p>
-<p>{this.props.foo.test}</p>
-```
-
-Browse to /foo.html to see _"lorem ipsum"_ you have added to the redux store.
-
-#### Refactor
-PWA Studio seperates the much logic for handling Redux from the main component file.
-Lets fo the same by creating:
-
-_src/components/Foo/container.js_
-```javascript
-import { connect } from 'src/drivers';
-import Foo from './Foo';
- 
+```jsx
 const mapStateToProps = ({ foo }) => ({ foo });
- 
-export default connect(
-    mapStateToProps,
-)(Foo);
+export default connect(mapStateToProps)(Foo);
 ```
 
-Next update _src/components/Foo/index.js_ to be:
-```
-export { default } from './container';
-export { default as Foo } from './Foo';
-```
-
-Now remove the following lines from Foo.js
-```javascript
-import { connect } from 'src/drivers';
-const mapStateToProps = ({ foo }) => ({ foo });
-```
-
-And replace the export statement back to what it was previously:     
-`export default classify(defaultClasses)(Foo);`
-
-Browse to /foo.html to see the _"lorem ipsum"_ is still coming from the redux store.
+Browse to _/foo.html_ to see _"lorem ipsum"_ you have added to the redux store.
 
 ### Update The Redux Store
 
@@ -113,7 +102,7 @@ To update the Redux store we first need to add a [redux action].
 
 Add the following files...
 
-_src/actions/foo/actions.js_
+_[/src/actions/foo/actions.js]_
 ```javascript
 import { createActions } from 'redux-actions';
  
@@ -125,16 +114,15 @@ const actionTypes = [
 export default createActions(...actionTypes, { prefix });
 ```
 
-_src/actions/foo/asyncActions.js_
+_[src/actions/foo/asyncActions.js]_
 ```javascript
-
 import actions from './actions';
  
 export const updateTest = value => async dispatch =>
     dispatch(actions.updateTest(value));
 ```
 
-_src/actions/foo/index.js_
+_[src/actions/foo/index.js]_
 ```javascript
 export { default } from './actions';
 export * from './asyncActions';
@@ -146,10 +134,12 @@ export * from './asyncActions';
 - [async actions] which are useful when API responses update the redux store.
 
 #### Update the Reducer with the New Action
-Now that we have our redux action created add it to our reducer go to _how-to-venia/_src/reducers/foo.js_ and change the `import actions` statement to:     
-`import actions from 'src/actions/foo';`
+Now that we have our redux action created add it to our reducer, go to _[/src/reducers/foo.js]_ and change the `import actions` statement to:     
+```javascript
+import actions from 'src/actions/foo';
+```
 
-And in the `reducerMap` change `toggleDrawer` to `actions.updateTest`.
+And in the `reducerMap` change `actions.toggleDrawer` to `actions.updateTest`.
 
 #### Create a component to update the Redux Store
 
@@ -158,51 +148,57 @@ Next we'll create a new child component which will use the action above to updat
 _src/components/Foo/updateRedux.js_
 ```javascript
 import React, { Component } from 'react';
-import { connect } from 'src/drivers';
+import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { PropTypes, func, string } from 'prop-types';
 import { updateTest } from 'src/actions/foo';
- 
+
 class updateRedux extends Component {
-    static propTypes = {
-        test: PropTypes.string,
-        updateTest: PropTypes.func.isRequired
-    };
- 
-    render() {
-        const { test, updateTest } = this.props;
- 
-        return (
-            <input type="text" value={test} onChange={updateTest}/>
-        );
-    }
+  static propTypes = {
+    test: PropTypes.string,
+    updateTest: PropTypes.func.isRequired
+  };
+
+  render() {
+    const { test, updateTest } = this.props;
+
+    return (
+      <input type="text" value={test} onChange={updateTest} style={{ textAlign: 'center' }} />
+    );
+  }
 }
- 
+
 const mapDispatchToProps = dispatch => ({
-    updateTest: (e) => dispatch(updateTest(e.target.value))
+  updateTest: (e) => dispatch(updateTest(e.target.value))
 });
- 
+
 export default compose(
-    connect(
-        null,
-        mapDispatchToProps
-    )
+  connect(
+    null,
+    mapDispatchToProps
+  )
 )(updateRedux);
 ```
 
-Import the above component to the FOO Component.     
-`import UpdateRedux from './updateRedux';`
+Import the above component to the FOO Component.  
+```javascript   
+import UpdateRedux from './updateRedux';
+```
 
 And add it to the JSX:    
-`<UpdateRedux test={this.props.foo.test} />`
+```jsx
+<hr className={classes.spacer} />
+<p className={classes.label}>The input below is interacting with Redux:</p>
+<UpdateRedux test={this.props.foo.test} />
+<p style={{ marginTop: 10 }}>{this.props.foo.test}</p>
+```
 
 Now test it by typing into the new input box while checking Redux dev tools to see the value in the Redux store update.
 
-
+![foo in the redux store](./foo-redux-actions.gif)
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [Redux]: https://redux.js.org/
 [Redux DevTools]: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
@@ -213,3 +209,10 @@ Now test it by typing into the new input box while checking Redux dev tools to s
 [redux action]: https://redux.js.org/basics/actions
 [createActions]: https://redux-actions.js.org/api/createaction
 [async actions]: https://redux.js.org/advanced/async-actions#async-actions
+[/src/store.js]: /src/store.js
+[/src/reducers/foo.js]: /src/reducers/foo.js
+[/src/reducers/index.js]: /src/reducers/index.js
+[/src/actions/foo/actions.js]: /src/actions/foo/actions.js
+[src/actions/foo/asyncActions.js]: [src/actions/foo/asyncActions.js
+[src/actions/foo/index.js]: [src/actions/foo/index.js
+[/src/components/Foo/Foo.js]: /src/components/Foo/Foo.js

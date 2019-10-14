@@ -75,11 +75,11 @@ import LoadingIndicator from '@magento/venia-ui/lib/components/LoadingIndicator'
 ```
 
 And replace:
-```javascript
+```jsx
 <div>loading...</div>
 ``` 
 with:
-```javascript
+```jsx
 <LoadingIndicator>{`Fetching Product...`}</LoadingIndicator>
 ```
 
@@ -87,6 +87,5 @@ Browse to the /foo.html URL in the application.
 
 ---
 - [> see other topics](../../README.md#Topics)
-- [> see foo-demo branch for completed code](https://github.com/rossmc/how-to-venia/tree/foo-demo/src)
 
 [React Apollo]: https://github.com/apollographql/react-apollo

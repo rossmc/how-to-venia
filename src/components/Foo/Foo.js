@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Greeting from './greeting';
 import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import defaultClasses from './Foo.css';
 import CategoryList from '@magento/venia-ui/lib/components/CategoryList';
-import ProductLink from './productLink'
+import ProductLink from './productLink';
+import UpdateRedux from './updateRedux';
 
 class Foo extends Component {
   state = {
@@ -36,9 +38,14 @@ class Foo extends Component {
         <hr className={classes.spacer} />
         <p className={classes.label}>A custom react component which uses graphql</p>
         <ProductLink sku="VT11" />
+        <hr className={classes.spacer} />
+        <p className={classes.label}>The input below is interacting with Redux:</p>
+        <UpdateRedux test={this.props.foo.test} />
+        <p style={{ marginTop: 10 }}>{this.props.foo.test}</p>
       </div>
     );
   }
 }
 
-export default Foo;
+const mapStateToProps = ({ foo }) => ({ foo });
+export default connect(mapStateToProps)(Foo);

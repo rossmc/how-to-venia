@@ -30,6 +30,7 @@ They cover basic [React] & [PWA Studio] concepts which I think may be useful to 
 1. [Explore Magento's GraphQL API in GraphiQL](./how-to-articles/explore-graphql-with-graphiql/index.md)
 1. [Use Magento's GraphQL API with Apollo](./how-to-articles/use-magentos-graphql-api/index.md)
 1. [Manage State with Redux](./how-to-articles/manage-state-with-redux/index.md)
+1. [React Hooks](./how-to-articles/react-hooks/index.md) (TODO)
 1. [Redux with Apollo Client](./how-to-articles/redux-with-apollo-client/index.md) (TODO)
 1. [Use Magento's REST API](./how-to-articles/use-magentos-rest-api/index.md) (TODO)
 1. [Use a another GraphQL API](./how-to-articles/use-another-graphql-api/index.md) (TODO)

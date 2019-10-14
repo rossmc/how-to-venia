@@ -39,11 +39,6 @@ import { mergeClasses } from '@magento/venia-ui/lib/classify';
 import defaultClasses from './Foo.css';
 ```
 
-Use the classify [HOC] to export the generated CSS classes on the MonsoonTest component.   
-```javascript
-export default classify(defaultClasses)(Foo);
-``` 
-
 Use [es6's destructuring] syntax to assign class names added to REACT props by the classify HOC to a const within the *render()* function:    
 ```javascript
 const classes = mergeClasses(defaultClasses);

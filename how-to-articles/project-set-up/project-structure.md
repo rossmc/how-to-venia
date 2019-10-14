@@ -1,4 +1,4 @@
-# Project Set-Up
+# Project Structure
 After installing a PWA Studio App with `npm init @magento/pwa` review the files and code in the `./src/` directory.
 
 This is the directory where you can begin making customisations to your application.  

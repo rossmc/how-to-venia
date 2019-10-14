@@ -3,12 +3,18 @@
 This is a Magento 2.3.1 PWA Storefront built with the new scaffolding mechanism available from [PWA Studio] v4.
 
 More than that, it's a collection of **[how-to-articles]** which can be followed to give you a basic understanding of how to work with [PWA Studio] 
-by creating a storefront based on Magento's  [Venia Storefront (Concept)], [venia.magento.com].
+by creating a storefront based on Magento's [Venia Storefront (Concept)], [venia.magento.com].
 
 ## Why?
 As I started to explore [PWA Studio] I kept notes to help me understand how it worked. 
 As a Magento front-end developer there are new skills to master :smile:
 I thought that these notes may be helpful to others who were in a similar position.
+
+PWA Studio has not offered a clear way of setting up a PWA Studio app until recently.  
+Previously you needed to clone their [monorepo] which was not a straightforward process, _(see [v1.0.0 of this repo])_.
+Fortunately, PWA Studio improves this process with their new scaffolding mechanism, 
+currently this is only on pre-release and has little documentation.  
+Here I share my understanding of how it can work and be used to create your own custom PWA Studio storefront.
 
 ## How?
 
@@ -77,7 +83,6 @@ i.e. [Set Venia as Project Dependency](./how-to-articles/project-setup/set-venia
 [what magento says]: https://community.magento.com/t5/Magento-DevBlog/PWA-Studio-2-1-0-has-been-released/ba-p/127492
 [@magento/peregrine]: https://www.npmjs.com/package/@magento/peregrine
 [how-to-articles]: #How-to-Articles
-[TODO]: #TODO
 [Venia storefront setup]: https://magento.github.io/pwa-studio/venia-pwa-concept/setup/
 [monorepo]: https://github.com/magento-research/pwa-studio#about-this-repository
 [@magento]: https://www.npmjs.com/org/magento
@@ -88,3 +93,5 @@ i.e. [Set Venia as Project Dependency](./how-to-articles/project-setup/set-venia
 [./how-to-articles/]: ./how-to-articles/
 [PWA Studio]: https://github.com/magento-research/pwa-studio
 [React]: https://reactjs.org/
+[monorepo]: https://github.com/magento/pwa-studio/#about-this-repository
+[v1.0.0 of this repo]: https://github.com/rossmc/how-to-venia/tree/1.0.0

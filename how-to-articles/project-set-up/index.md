@@ -1,5 +1,5 @@
 # Project Set-Up
-This project is based on PWA Studio v4.  Please ensure you have the correct [stack prerequisites] installed locally before continuing.
+This project is based on PWA Studio develop branch after the release of v4.0.0.  Please ensure you have the correct [stack prerequisites] installed locally before continuing.
 
 ## Overview
 We are going to create a PWA Studio app with it's scaffolding mechanism available from it's `npm init @magento/pwa` command.

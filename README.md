@@ -1,6 +1,6 @@
 # How to Venia
 ## What?
-This is a Magento 2.3.1 PWA Storefront built with the new [scaffolding mechanism] available from [PWA Studio] v4.
+This is a Magento 2.3.1 PWA Storefront built with the new [scaffolding mechanism] available from [PWA Studio] v4.1.0-dev.0.
 
 More than that, it's a collection of **[how-to-articles]** which can be followed to give you a basic understanding of how to work with [PWA Studio] 
 by creating a storefront based on Magento's [Venia Storefront (Concept)], [venia.magento.com].

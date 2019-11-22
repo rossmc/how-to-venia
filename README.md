@@ -59,7 +59,7 @@ cd how-to-venia
 yarn install
 
 # set default environment variables
-cp .env.dist .env
+cp .env.example .env
 
 # start the app with development environment which includes hot-reloading
 yarn watch

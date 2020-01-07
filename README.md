@@ -4,7 +4,7 @@ The goal of this tutorial series is to guide you through setting up, working wit
 first Magento PWA Studio storefront using the venia-ui library.
 
 To begin only a basic understanding of REACT is required. As we progress, new concepts will be introduced, 
-for which there will be an **Learn more** section to provide you with helpful resources.
+for which there will be an [Learn more][] section to provide you with helpful resources.
 
 ## Topics
 
@@ -40,3 +40,4 @@ with REACT components to demonstrate how you can work with PWA Studio to make ba
 
 [Magento PWA Studio Overview]: https://magento.github.io/pwa-studio/technologies/overview/
 [what we are building]: ./doc/images/foo-screen-shot.png
+[Learn more]: #learn-more

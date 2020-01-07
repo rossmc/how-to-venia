@@ -117,11 +117,11 @@ they can be update in your local _./.env_ file by changing the properties for `M
 -   Clear the full application storage, not just the browser cache.
     In the _Chrome_ browser this can be done by opening the _Developer Tools_    
     and from the _Application_ tab select _Clear Storage_ on the left side navigation
-    and pressing the _Clear site data_ button.
+    and pressing the _Clear site data_ button.     
     ![clear storage][]
 -   Make sure the `MAGENTO_BACKEND_URL` from your local _./.env_ file is accessible.
 -   If you have a _Privacy Error_ message in your browser there should be a **proceed** link for you to click on.    
-    If not, you should be able to find instructions online on how to get your windows, mac or linux to trust self-signed SSL certificates.
+    If not, you should be able to find instructions online on how to get your windows, mac or linux to trust self-signed SSL certificates.     
     ![privacy error][]
 -   Still having issues? Ask the Magento community in the [#PWA][] slack channel or [Magento Stack Exchange][].
 

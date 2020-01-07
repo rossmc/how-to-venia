@@ -9,7 +9,7 @@ for which there will be an [Learn more][] section to provide you with helpful re
 ## Topics
 
 -   [Project Set-Up](./doc/project-set-up/index.md) - Get your local development environment up and running.
--   [Get to Know PWA Studio](./doc/get-to-know-pwa-studio/index.md) - Understand the project structure and learn the basics of how routing works in PWA Studio.
+-   [Project Structure & Routing](./doc/project-structure-and-routing/index.md) - Understand the project structure and learn the basics of how routing works in PWA Studio.
 -   [Add a static route](./doc/add-a-static-route/index.md) - Add a static route to your PWA Studio app.
 -   [Update a Site Footer Component](./doc/update-site-footer/index.md) - Make an update to the venia-ui footer component to add your own links.
 -   [Props & propTypes](./doc/props-proptypes/index.md) - How PWA Studio uses REACT Props & propTypes.

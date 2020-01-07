@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`outputs custom package.json 1`] = `
+Object {
+  "author": "me",
+  "browser": "./browser.lol",
+  "dependencies": Object {
+    "left-pad": "1.0.0",
+  },
+  "description": "A new project based on @magento/venia-concept",
+  "license": "UNLICENSED",
+  "name": "whee",
+  "private": true,
+  "scripts": Object {
+    "test": "yarn run do test this",
+  },
+  "version": "0.0.1",
+}
+`;
+
+exports[`outputs npm package.json 1`] = `
+Object {
+  "author": "me",
+  "browser": "./browser.lol",
+  "dependencies": Object {
+    "left-pad": "1.0.0",
+  },
+  "description": "A new project based on @magento/venia-concept",
+  "license": "UNLICENSED",
+  "name": "whee",
+  "private": true,
+  "scripts": Object {
+    "test": "npm run do test this",
+  },
+  "version": "0.0.1",
+}
+`;

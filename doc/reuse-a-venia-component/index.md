@@ -1,5 +1,4 @@
-#Reuse a Venia Component
---- 
+# Reuse a Venia Component
 
 Here we'll quickly demonstrated how PWA Studio components can be easily reused.
 

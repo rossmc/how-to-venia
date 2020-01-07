@@ -1,5 +1,4 @@
-#Use Magento's GraphQL API with Apollo
----
+# Use Magento's GraphQL API with Apollo
 
 ## Overview
 

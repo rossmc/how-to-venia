@@ -1,5 +1,4 @@
-#Props & Prop-Types
----
+# Props & Prop-Types
 
 ## Overview
 

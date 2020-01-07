@@ -1,5 +1,4 @@
-#Component State
----
+# Component State 
 
 We'll create a simple [controlled form element][] for our Foo component to demonstrate how [component state][] is used in React.    
 

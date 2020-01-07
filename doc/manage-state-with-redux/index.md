@@ -1,5 +1,4 @@
-#Manage State with Redux
----
+# Manage State with Redux
 
 ## Overview
 

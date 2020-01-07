@@ -39,4 +39,4 @@ with REACT components to demonstrate how you can work with PWA Studio to make ba
 -   [Main Concepts of React](https://reactjs.org/docs/hello-world.html)
 
 [Magento PWA Studio Overview]: https://magento.github.io/pwa-studio/technologies/overview/
-[what we are building]: ./images/foo-screen-shot.png
+[what we are building]: ./doc/images/foo-screen-shot.png

@@ -1,5 +1,4 @@
-#CSS Modules
----
+# CSS Modules
 
 ## Overview
 

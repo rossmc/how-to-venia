@@ -1,5 +1,4 @@
-#Explore Magento's GraphQL with GraphiQL
----
+# Explore Magento's GraphQL with GraphiQL
 
 ## Overview
 

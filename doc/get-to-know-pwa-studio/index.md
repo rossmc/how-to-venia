@@ -1,5 +1,4 @@
----
-title: Project Structure & Routing
+#Project Structure & Routing
 ---
 
 ## Overview
@@ -111,7 +110,7 @@ a commented section to define the pageType for a specific page type. See the [ca
 -   [Routing with PWA Studio][]
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [Routing with PWA Studio]: https://magento.github.io/pwa-studio/peregrine/routing/
 [Venia Storefront (Concept)]: https://magento.github.io/pwa-studio/venia-pwa-concept/

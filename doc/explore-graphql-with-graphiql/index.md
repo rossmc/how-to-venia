@@ -1,5 +1,4 @@
----
-title: Explore Magento's GraphQL with GraphiQL
+#Explore Magento's GraphQL with GraphiQL
 ---
 
 ## Overview
@@ -40,7 +39,7 @@ Below step by step instructions to introduce you to Magento's GraphQL.
 -   [How to GraphQL](https://www.howtographql.com/)
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [PWA Studio: GraphQL]: https://magento.github.io/pwa-studio/technologies/basic-concepts/graphql/
 [chrome network tab]: ./images/graphql-network-screenshot.png

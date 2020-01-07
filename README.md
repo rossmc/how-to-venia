@@ -6,7 +6,7 @@ first Magento PWA Studio storefront using the venia-ui library.
 To begin only a basic understanding of REACT is required. As we progress, new concepts will be introduced, 
 for which there will be an **Learn more** section to provide you with helpful resources.
 
-## What you will learn
+## Topics
 
 -   [Project Set-Up](./doc/project-set-up/index.md) - Get your local development environment up and running.
 -   [Get to Know PWA Studio](./doc/get-to-know-pwa-studio/index.md) - Understand the project structure and learn the basics of how routing works in PWA Studio.

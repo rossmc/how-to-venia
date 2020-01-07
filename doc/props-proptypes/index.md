@@ -1,5 +1,4 @@
----
-title: Props & Prop-Types
+#Props & Prop-Types
 ---
 
 ## Overview
@@ -70,6 +69,6 @@ i.e. `<Greeting name={2} />`
 -   [React Typechecking with Proptypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [prop types error]: ./images/prop-types-error.png

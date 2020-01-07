@@ -1,5 +1,4 @@
----
-title: Use Magento's GraphQL API with Apollo
+#Use Magento's GraphQL API with Apollo
 ---
 
 ## Overview
@@ -88,7 +87,7 @@ Browse to the /foo.html URL in the application.
 -   [React Apollo](https://github.com/apollographql/react-apollo)
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [graphql and apollo client]: ./images/graphql-and-apollo-client.png
 [https://www.apollographql.com/docs/react/]: https://www.apollographql.com/docs/react/

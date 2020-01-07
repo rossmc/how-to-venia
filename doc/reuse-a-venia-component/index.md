@@ -1,5 +1,4 @@
----
-title: Reuse a Venia Component
+#Reuse a Venia Component
 --- 
 
 Here we'll quickly demonstrated how PWA Studio components can be easily reused.
@@ -25,6 +24,6 @@ Check the storefront of the app to see the _CategoryList_ component rendered.
 -   [Modular components][]
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [Modular components]: https://magento.github.io/pwa-studio/venia-pwa-concept/features/modular-components/

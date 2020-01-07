@@ -1,5 +1,4 @@
----
-title: Update Site Footer
+#Update Site Footer
 ---
 
 ## Overview
@@ -73,7 +72,7 @@ Finally add the below JSX to render the Link for the _foo.html_ static route:
 ![foo footer link][]
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [venia-ui/lib/drivers]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/drivers
 [foo footer link]: ./images/foo-footer-link.png

@@ -1,5 +1,4 @@
----
-title: Manage State with Redux
+#Manage State with Redux
 ---
 
 ## Overview
@@ -236,7 +235,7 @@ Now test it by typing into the new input box while checking Redux dev tools to s
 -   [Getting Started with Redux][]
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [Getting Started with Redux]: https://redux.js.org/introduction/getting-started
 [Learn More]: #learn-more

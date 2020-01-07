@@ -1,5 +1,4 @@
----
-title: CSS Modules
+#CSS Modules
 ---
 
 ## Overview
@@ -77,7 +76,7 @@ Inspect the `h1.title` element in the browser inspector to see how the CSS class
 -   [CSS Modules][]
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [CSS Modules]: https://magento.github.io/pwa-studio/technologies/basic-concepts/css-modules/
 [css modules screenshot]: ./images/css-modules.png

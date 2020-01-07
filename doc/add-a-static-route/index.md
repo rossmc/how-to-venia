@@ -1,5 +1,4 @@
----
-title: Add a Static Route
+#Add a Static Route
 ---
 
 ## Overview
@@ -135,7 +134,7 @@ Browse to the _/foo.html_ URL in the application.
 -   [Function and Class Components in REACT][]
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [JSX]: https://reactjs.org/docs/introducing-jsx.html
 [Link]: https://knowbody.github.io/react-router-docs/api/Link.html

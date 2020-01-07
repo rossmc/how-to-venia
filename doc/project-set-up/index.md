@@ -1,5 +1,4 @@
----
-title: Project Set-Up
+#Project Set-Up
 ---
 
 ## Overview
@@ -135,7 +134,7 @@ they can be update in your local _./.env_ file by changing the properties for `M
 -   [Magento theme vs PWA storefront][]
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [Venia Storefront (Concept)]: https://magento.github.io/pwa-studio/venia-pwa-concept/
 [Modular Components]: https://magento.github.io/pwa-studio/venia-pwa-concept/features/modular-components/

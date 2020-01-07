@@ -1,5 +1,4 @@
----
-title: Component State
+#Component State
 ---
 
 We'll create a simple [controlled form element][] for our Foo component to demonstrate how [component state][] is used in React.    
@@ -39,7 +38,7 @@ Now test this element on the storefront and see how it automatically updates as 
 -   [component state][]
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [controlled form element]: https://reactjs.org/docs/forms.html#controlled-components
 [component state]: https://reactjs.org/docs/faq-state.html

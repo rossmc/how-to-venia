@@ -1,5 +1,4 @@
----
-title: Preparing to go live
+#Preparing to go live
 ---
 
 ## Overview
@@ -91,7 +90,7 @@ TODO
 -   [Environment variables][]
 
 ---
-- [> see other topics](../../README.md#what-you-will-learn)
+- [> see other topics](../../README.md#topics)
 
 [Magento Cloud deployment]: https://magento.github.io/pwa-studio/tutorials/cloud-deploy/
 [Braintree integration]: https://magento.github.io/pwa-studio/venia-pwa-concept/features/braintree/

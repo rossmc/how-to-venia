@@ -2,8 +2,7 @@
 
 We'll create a simple [controlled form element][] for our Foo component to demonstrate how [component state][] is used in React.    
 
-{: .bs-callout .bs-callout-info}
-controlled form elements are similar to KnockoutJS observables use in Magento2.
+> controlled form elements are similar to KnockoutJS observables use in Magento2.
 
 First add the state object to the Foo component and a function to handle when it changes.
 

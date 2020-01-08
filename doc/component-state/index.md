@@ -49,3 +49,4 @@ Now test this element on the storefront and see how it automatically updates as 
 
 [controlled form element]: https://reactjs.org/docs/forms.html#controlled-components
 [component state]: https://reactjs.org/docs/faq-state.html
+[Introducing React Hooks]: https://reactjs.org/docs/hooks-intro.html

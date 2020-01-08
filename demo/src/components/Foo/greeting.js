@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import { PropTypes, string } from 'prop-types';
+import React from 'react';
+import { PropTypes } from 'prop-types';
 
-class Greeting extends Component {
-  static propTypes = {
-    name: PropTypes.string
-  };
-  
-  render() {
-    return (
-      <strong>Hello, {this.props.name}!</strong>
-    );
-  }
+const Greeting = props => {
+  const { name } = props;
+
+  return (
+    <strong>Hello, {name}!</strong>
+  );
 }
+
+Greeting.propTypes = {
+  name: PropTypes.string
+};
 
 export default Greeting;

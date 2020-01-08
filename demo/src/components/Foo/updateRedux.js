@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { PropTypes, func, string } from 'prop-types';
+import { PropTypes } from 'prop-types';
 import { updateTest } from 'src/actions/foo';
 
-class updateRedux extends Component {
-  static propTypes = {
-    test: PropTypes.string,
-    updateTest: PropTypes.func.isRequired
-  };
+const updateRedux = props => {
+  const { test, updateTest } = props;
 
-  render() {
-    const { test, updateTest } = this.props;
-
-    return (
-      <input type="text" value={test} onChange={updateTest} style={{ textAlign: 'center' }} />
-    );
-  }
+  return (
+    <input type="text" value={test} onChange={updateTest} style={{ textAlign: 'center' }} />
+  );
 }
+
+updateRedux.propTypes = {
+  test: PropTypes.string,
+  updateTest: PropTypes.func.isRequired
+};
 
 const mapDispatchToProps = dispatch => ({
   updateTest: (e) => dispatch(updateTest(e.target.value))

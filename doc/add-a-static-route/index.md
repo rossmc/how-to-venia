@@ -94,21 +94,19 @@ export { default } from './Foo';
 
 *src/components/Foo/Foo.js*
 ```javascript
-import React, { Component } from 'react';
- 
-class Foo extends Component {
- 
- 
-    componentDidMount() {
-        document.title = 'Foo Test Page';
-    }
-    render() {
-        return (
-            <h1>Hello Foo Component</h1>
-        );
-    }
+import React, { useEffect } from 'react';
+
+const Foo = () => {
+
+  useEffect(() => {
+    document.title = 'Foo Test Page';
+  }, []);
+
+  return (
+    <h1>Hello Foo Component</h1>
+  );
 }
- 
+
 export default Foo;
 ```
 
@@ -131,6 +129,7 @@ Browse to the _/foo.html_ URL in the application.
 
 -   [Introducing JSX][]
 -   [Function and Class Components in REACT][]
+-   [Introducing React Hooks][]
 
 ---
 - [> see other topics](../../README.md#topics)

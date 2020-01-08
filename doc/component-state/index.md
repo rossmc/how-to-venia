@@ -2,8 +2,7 @@
 
 We'll create a simple [controlled form element][] for our Foo component to demonstrate how [component state][] is used in React with Hooks.    
 
-{: .bs-callout .bs-callout-info}
-controlled form elements are similar to KnockoutJS observables use in Magento2.
+> controlled form elements are similar to KnockoutJS observables use in Magento2.
 
 In the _Foo.js_ component, first add the [state hook][] to your React `import` statement.
 

@@ -138,4 +138,5 @@ Browse to the _/foo.html_ URL in the application.
 [Link]: https://knowbody.github.io/react-router-docs/api/Link.html
 [Introducing JSX]: https://reactjs.org/docs/introducing-jsx.html
 [Function and Class Components in REACT]: https://reactjs.org/docs/components-and-props.html#function-and-class-components
+[Introducing React Hooks]: https://reactjs.org/docs/hooks-intro.html
 [hello world jsx]: ./images/hello-world-jsx.png

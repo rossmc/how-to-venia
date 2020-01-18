@@ -2,6 +2,8 @@
 
 ## Overview
 
+> ⚠️ PWA Studio now provides state data through [context hooks] which is not demonstarted in this documented. The method described here still works but needs to be updated.
+
 PWA Studio uses Redux to manage the application state. 
 If you're not familiar with Redux you should see the [Learn More][] section and 
 do some of your own research online so you have basic understanding of it.  
@@ -258,3 +260,4 @@ Now test it by typing into the new input box while checking Redux dev tools to s
 [redux store in devtools]: ./images/redux-store-screenshot.png
 [foo in the redux store]: ./images/foo-in-the-redux-store.gif
 [foo redux actions]: ./images/foo-redux-actions.gif
+[context hooks]: https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/context

@@ -47,7 +47,7 @@ In subsequent tutorials we will demonstrate how you can begin customising your p
 by copying the React components from the _node_modules/@magento/_ to your projects _./src/_ directory.
 
 Your project will follow the same structure as the [Venia Storefront (Concept)][].
-It is worth reviewing Maagento's docs on [Venia project structure][] and [Modular components][] for this reason.
+It is worth reviewing Magento's docs on [Venia project structure][] and [Modular components][] for this reason.
 
 ## Routing
 

@@ -1,5 +1,9 @@
 # PWA Studio Fundamentals
 
+⚠️ These tutorials are no longer maintained. They are now maintained under the [Magento documentation side].
+
+<hr />
+
 The goal of this tutorial series is to guide you through setting up, working with and deploying your 
 first Magento PWA Studio storefront using the venia-ui library.
 
@@ -41,3 +45,4 @@ with REACT components to demonstrate how you can work with PWA Studio to make ba
 [Magento PWA Studio Overview]: https://magento.github.io/pwa-studio/technologies/overview/
 [what we are building]: ./doc/images/foo-screen-shot.png
 [Learn more]: #learn-more
+[Magento documentation side]: https://magento.github.io/pwa-studio/tutorials/pwa-studio-fundamentals/

@@ -1,6 +1,6 @@
 # PWA Studio Fundamentals
 
-⚠️ These tutorials are no longer maintained. They are now maintained under the [Magento documentation side].
+⚠️ These tutorials are no longer maintained. They are now maintained under the [Adobe/Magento documentation side].
 
 <hr />
 
